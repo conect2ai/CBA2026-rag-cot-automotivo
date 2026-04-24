@@ -1,0 +1,402 @@
+[
+  {
+    "pergunta": "O que devo fazer se a luz do freio de estacionamento não apagar?",
+    "resposta": "A luz vermelha do freio de estacionamento indica que o freio de mão está acionado. Se ela permanecer acesa depois de soltar o freio, pode haver problema no sistema de freio; pare o veículo e procure uma oficina【868518346125771†L744-L752】."
+  },
+  {
+    "pergunta": "Por que várias luzes acendem ao ligar o carro?",
+    "resposta": "É normal que muitas luzes acendam por alguns segundos ao girar a chave. Isso é um teste de funcionamento; elas devem se apagar logo após a partida. Se alguma permanecer acesa ou piscar, há um aviso ou falha【868518346125771†L724-L739】."
+  },
+  {
+    "pergunta": "O que fazer quando aparece uma luz vermelha no painel?",
+    "resposta": "Luzes vermelhas indicam problemas graves (como superaquecimento ou falta de óleo). Ao ver uma luz vermelha, pare o carro com segurança, desligue o motor e consulte o manual ou procure assistência【868518346125771†L764-L768】【868518346125771†L757-L762】."
+  },
+  {
+    "pergunta": "O que significa a luz amarela em forma de motor?",
+    "resposta": "É a luz do sistema de emissões (“check engine”). Ela indica uma falha no motor ou no sistema de emissões. O carro ainda anda, mas procure uma oficina para fazer um diagnóstico【868518346125771†L799-L815】."
+  },
+  {
+    "pergunta": "O que devo fazer quando a luz da bateria acende?",
+    "resposta": "A luz da bateria indica que o alternador não está carregando. Você pode continuar por pouco tempo, mas procure assistência técnica rapidamente para evitar que o carro desligue【868518346125771†L783-L785】."
+  },
+  {
+    "pergunta": "Como saber se uma lâmpada de seta queimou?",
+    "resposta": "O indicador de seta no painel pisca duas vezes mais rápido quando alguma lâmpada de seta está queimada. Nesse caso, substitua a lâmpada o quanto antes【726097448576567†L6795-L6797】."
+  },
+  {
+    "pergunta": "Quando a luz de temperatura do motor está piscando, devo parar?",
+    "resposta": "Sim. A luz vermelha de temperatura indica superaquecimento ou falta de líquido de arrefecimento. Pare imediatamente, desligue o motor e verifique o nível do líquido【868518346125771†L757-L762】."
+  },
+  {
+    "pergunta": "O que fazer se a luz do óleo acender enquanto dirijo?",
+    "resposta": "A luz de óleo indica baixa pressão de lubrificação. Pare e desligue o motor imediatamente para evitar danos graves. Não continue dirigindo com essa luz acesa【868518346125771†L764-L768】."
+  },
+  {
+    "pergunta": "Por que a luz do cinto de segurança não apaga?",
+    "resposta": "A luz lembra que o motorista ou o passageiro dianteiro não colocaram o cinto. Afivele o cinto corretamente para que a luz apague【868518346125771†L776-L781】."
+  },
+  {
+    "pergunta": "Quando a luz do airbag acende, devo me preocupar?",
+    "resposta": "Sim. A luz do airbag acesa indica defeito no sistema de airbag ou nos pré‑tensionadores do cinto. Procure uma concessionária para verificar【868518346125771†L844-L849】."
+  },
+  {
+    "pergunta": "Por que a luz de freio ABS acende?",
+    "resposta": "A luz do ABS indica que o sistema antiblocante está com defeito. O freio normal funciona, mas sem o ABS. Dirija com cuidado e faça o reparo【868518346125771†L799-L815】."
+  },
+  {
+    "pergunta": "Quando a luz “check engine” acende, o que fazer?",
+    "resposta": "Essa luz sinaliza falha no motor ou no sistema de emissões. O carro pode entrar em modo de emergência; leve‑o a uma oficina para diagnóstico【868518346125771†L799-L815】."
+  },
+  {
+    "pergunta": "O que a sigla EPC no painel quer dizer?",
+    "resposta": "EPC significa **Electronic Power Control**. A luz indica problema no acelerador eletrônico ou no motor; procure assistência【868518346125771†L799-L815】."
+  },
+  {
+    "pergunta": "O que é a luz com um floco de neve no painel?",
+    "resposta": "É um aviso de temperatura externa baixa. Ela acende quando a temperatura está abaixo de +4 °C para alertar sobre risco de gelo na pista e apaga quando a temperatura sobe acima de +6 °C【868518346125771†L1381-L1393】."
+  },
+  {
+    "pergunta": "Como sei se o controle de velocidade de cruzeiro está ligado?",
+    "resposta": "Quando o controle de velocidade (cruise control) está ativado, aparece um símbolo de velocímetro ou uma luz específica no painel. Se houver falha, a luz pode piscar【868518346125771†L876-L907】."
+  },
+  {
+    "pergunta": "O que significa o símbolo de uma chave inglesa no painel?",
+    "resposta": "Essa luz indica que um serviço de manutenção está próximo ou vencido. Agende a revisão conforme o plano de manutenção【868518346125771†L908-L934】."
+  },
+  {
+    "pergunta": "Quando a luz do Start‑Stop aparece cinza ou branca, o que isso indica?",
+    "resposta": "Significa que o sistema Start‑Stop não está disponível, por exemplo, porque a bateria está fraca, o motor não está na temperatura ideal ou há uso forte do ar‑condicionado【868518346125771†L876-L907】."
+  },
+  {
+    "pergunta": "Por que o carro desliga sozinho em paradas e como funciona?",
+    "resposta": "O Polo pode desligar o motor temporariamente em paradas para economizar combustível; essa função é o Start‑Stop. O motor religa quando você solta o pedal do freio ou aciona a embreagem【868518346125771†L876-L907】."
+  },
+  {
+    "pergunta": "Quando o controle de estabilidade aparece no painel, o que isso indica?",
+    "resposta": "A luz do controle de estabilidade (ESC) acende quando o sistema tem defeito ou foi desligado. Ela pisca quando o ESC está atuando para estabilizar o carro【868518346125771†L790-L797】."
+  },
+  {
+    "pergunta": "O que significa a luz de controle de tração apagada ou acesa?",
+    "resposta": "Se a luz “ASR OFF” estiver acesa, o controle de tração foi desligado manualmente; com o controle ligado, a luz fica apagada ou pisca apenas quando o sistema atua【868518346125771†L790-L797】."
+  },
+  {
+    "pergunta": "Quando a luz do alternador acende, o que devo fazer?",
+    "resposta": "A luz indica problema na carga da bateria. Dirija até uma oficina o quanto antes, pois a bateria pode descarregar【868518346125771†L783-L785】.\n\n## Uso das chaves, portas e janelas"
+  },
+  {
+    "pergunta": "Como destravar e travar o carro com a chave?",
+    "resposta": "Pressione uma vez o botão de destravar para abrir todas as portas. Para travar, pressione o botão de travamento. A tampa do porta‑malas pode ser aberta separadamente pelo botão específico【868518346125771†L5177-L5203】."
+  },
+  {
+    "pergunta": "O que fazer se a chave não destravar o carro?",
+    "resposta": "Se o controle remoto não funcionar, use a chave mecânica na fechadura da porta do motorista. O alarme pode soar até que a ignição reconheça a chave【726097448576567†L5777-L5792】."
+  },
+  {
+    "pergunta": "O que é o sistema Keyless e como usá‑lo?",
+    "resposta": "O Keyless permite abrir e fechar o veículo sem tirar a chave do bolso. Basta tocar a maçaneta para destravar ou pressionar um sensor para trancar. Se a chave ficar no porta‑malas, a tampa destrava sozinha【868518346125771†L5406-L5472】."
+  },
+  {
+    "pergunta": "O que acontece se a bateria da chave estiver fraca?",
+    "resposta": "Uma bateria fraca pode fazer o controle remoto ou o Keyless falhar. Substitua por uma bateria do mesmo tipo e polaridade; mantenha baterias fora do alcance de crianças【868518346125771†L5267-L5305】【868518346125771†L5406-L5472】."
+  },
+  {
+    "pergunta": "Por que meu carro só trava se a alavanca do câmbio estiver em P?",
+    "resposta": "Em veículos automáticos, por segurança, o travamento externo via Keyless só é possível quando a alavanca está em **P**【868518346125771†L5449-L5452】【726097448576567†L5684-L5686】."
+  },
+  {
+    "pergunta": "Como saber se as portas estão todas trancadas?",
+    "resposta": "Quando o travamento central está ativo, uma luz amarela no botão de travamento acende. O botão interno deixa de funcionar se o veículo estiver travado por fora【726097448576567†L5663-L5667】【726097448576567†L5693-L5704】."
+  },
+  {
+    "pergunta": "Posso abrir o porta‑malas sem destravar as portas?",
+    "resposta": "Sim. O botão de abertura do porta‑malas destrava apenas a tampa traseira sem destrancar o restante do veículo【868518346125771†L5177-L5203】."
+  },
+  {
+    "pergunta": "O que é a função de abertura ou fechamento dos vidros com um toque?",
+    "resposta": "Nos vidros elétricos, um segundo estágio do botão permite abrir ou fechar totalmente o vidro com um toque, sem precisar segurar【726097448576567†L6157-L6167】."
+  },
+  {
+    "pergunta": "Como uso a função de abrir os vidros com a chave à distância?",
+    "resposta": "Em algumas versões, mantendo o botão de destravar pressionado, todos os vidros abrem; mantendo o botão de travar pressionado, todos fecham. Soltar o botão interrompe o movimento【726097448576567†L6182-L6188】."
+  },
+  {
+    "pergunta": "Como parar o vidro elétrico enquanto ele sobe ou desce?",
+    "resposta": "Para interromper o curso automático, pressione ou puxe novamente o botão do vidro【726097448576567†L6174-L6176】."
+  },
+  {
+    "pergunta": "O que é o limitador de força dos vidros e para que serve?",
+    "resposta": "Esse sistema detecta obstáculos durante o fechamento automático e reverte o movimento do vidro, evitando apertar pessoas ou objetos【726097448576567†L6230-L6245】."
+  },
+  {
+    "pergunta": "É seguro deixar as janelas entreabertas quando o carro está trancado?",
+    "resposta": "Não é recomendado. Janelas abertas podem acionar erroneamente o alarme de movimento e permitir acesso de pessoas ou chuva ao interior【726097448576567†L5966-L5974】."
+  },
+  {
+    "pergunta": "Como travar e destravar as portas por dentro?",
+    "resposta": "Use o botão do travamento central na porta do motorista. Ele trava ou destrava todas as portas quando estão fechadas. Se o veículo foi travado com a chave, o botão interno não funciona【726097448576567†L5693-L5704】."
+  },
+  {
+    "pergunta": "Qual é a função Auto Lock (travamento automático)?",
+    "resposta": "É o sistema que tranca automaticamente as portas quando o veículo atinge cerca de 20 km/h. Uma luz no botão indica que está ativo【726097448576567†L5663-L5667】."
+  },
+  {
+    "pergunta": "Por que o carro destrava quando tiro a chave da ignição?",
+    "resposta": "O sistema Auto Unlock destrava as portas quando o veículo para e a chave é retirada ou quando se pressiona o botão interno. Isso facilita a saída dos ocupantes【726097448576567†L5670-L5681】."
+  },
+  {
+    "pergunta": "Como travar manualmente as outras portas se a bateria acabar?",
+    "resposta": "Abra a porta, remova a vedação de borracha na lateral, insira a haste da chave na fenda e pressione para travar. Depois feche a porta; ela só poderá ser aberta por dentro【726097448576567†L5777-L5792】."
+  },
+  {
+    "pergunta": "O que acontece se eu esquecer a chave no porta‑malas?",
+    "resposta": "Nos carros com Keyless, se a chave for esquecida no porta‑malas, a tampa destrava automaticamente para evitar que a chave fique presa【868518346125771†L5406-L5472】."
+  },
+  {
+    "pergunta": "Posso ativar ou desativar o travamento automático (Auto Lock)?",
+    "resposta": "Dependendo da versão, o Auto Lock pode ser configurado no menu “Carro” do sistema multimídia ou na concessionária, permitindo ativar ou desativar essa função【726097448576567†L5653-L5659】."
+  },
+  {
+    "pergunta": "Posso desligar o som (bip) de travamento do carro?",
+    "resposta": "Sim. O sinal sonoro de travamento/destravamento pode ser ativado ou desativado nas configurações do veículo no rádio ou por uma concessionária【868518346125771†L5206-L5225】."
+  },
+  {
+    "pergunta": "O que significa quando as luzes piscam ao trancar ou destrancar o carro?",
+    "resposta": "As luzes de seta piscam uma vez ao travar e duas vezes ao destravar, confirmando a operação do controle remoto【868518346125771†L5177-L5203】."
+  },
+  {
+    "pergunta": "Como destravar a porta do motorista com a chave manualmente?",
+    "resposta": "Levante a tampa da fechadura, insira a chave mecânica e gire. Após abrir, o alarme pode tocar até que a chave seja reconhecida na ignição【726097448576567†L5739-L5756】.\n\n## Segurança e assentos"
+  },
+  {
+    "pergunta": "Como ajustar o banco para dirigir de maneira segura?",
+    "resposta": "Ajuste a distância para que você alcance os pedais com as pernas levemente dobradas, mantenha o encosto ereto e posicione o volante para que fique a pelo menos 25 cm do seu peito【726097448576567†L2724-L2732】【726097448576567†L2740-L2744】."
+  },
+  {
+    "pergunta": "Qual é a distância correta entre meu peito e o volante?",
+    "resposta": "O manual recomenda uma distância de pelo menos **25 cm** entre o tórax e o centro do volante para que o airbag funcione corretamente【726097448576567†L2724-L2732】."
+  },
+  {
+    "pergunta": "Por que não posso dirigir com o banco muito reclinado?",
+    "resposta": "Viajar com o encosto muito inclinado reduz a proteção do cinto e do airbag. Em caso de acidente, aumenta o risco de ferimentos【726097448576567†L2665-L2685】."
+  },
+  {
+    "pergunta": "Por que não posso sentar de lado ou com os pés para fora do carro?",
+    "resposta": "Posições como sentar de lado, com os pés fora ou apoiado no painel são perigosas, pois os sistemas de retenção não funcionam corretamente em caso de acidente【726097448576567†L2665-L2685】."
+  },
+  {
+    "pergunta": "Como ajustar o encosto de cabeça corretamente?",
+    "resposta": "A parte superior do encosto deve estar alinhada com a parte superior da cabeça. Pessoas baixas devem empurrar o apoio para baixo, e pessoas altas devem levantá‑lo até o batente【726097448576567†L2766-L2779】."
+  },
+  {
+    "pergunta": "Quantas pessoas podem viajar no Polo 2025?",
+    "resposta": "O veículo possui cinco assentos: dois dianteiros e três traseiros. Não transporte mais pessoas do que o número de assentos com cinto【726097448576567†L2605-L2608】."
+  },
+  {
+    "pergunta": "Por que é perigoso viajar no porta‑malas?",
+    "resposta": "Viajar no compartimento de bagagem é proibido e extremamente perigoso, pois não há proteção adequada em caso de frenagem ou colisão【726097448576567†L2682-L2685】."
+  },
+  {
+    "pergunta": "Como colocar o cinto de segurança de forma correta?",
+    "resposta": "Sente‑se ereto, puxe a faixa sobre o peito e o quadril e encaixe a lingueta na fivela correspondente. Ajuste para que fique justo ao corpo【868518346125771†L2750-L2762】."
+  },
+  {
+    "pergunta": "Posso afivelar o cinto em qualquer fivela?",
+    "resposta": "Não. Cada cinto possui uma fivela correspondente. Utilizar a fivela errada reduz a eficácia do cinto e aumenta o risco de lesões【868518346125771†L2778-L2784】."
+  },
+  {
+    "pergunta": "Preciso trocar o cinto depois de um acidente?",
+    "resposta": "Sim. Cintos e pré‑tensionadores que sofreram esforço em acidente devem ser avaliados e substituídos em uma concessionária【868518346125771†L2737-L2747】【868518346125771†L2802-L2831】."
+  },
+  {
+    "pergunta": "É seguro usar o cinto sobre roupas muito grossas?",
+    "resposta": "Não. Roupas volumosas impedem o ajuste adequado do cinto ao corpo, reduzindo sua eficácia. Use o cinto diretamente sobre o corpo【868518346125771†L2789-L2801】."
+  },
+  {
+    "pergunta": "Por que não devo colocar objetos no painel?",
+    "resposta": "Objetos no painel podem ser lançados com força pelo airbag durante um acidente, causando ferimentos. Não coloque pessoas, animais ou itens na área de expansão do airbag【868518346125771†L3454-L3473】."
+  },
+  {
+    "pergunta": "É normal tirar o cinto no meio da viagem?",
+    "resposta": "Não. Remover o cinto enquanto o veículo está em movimento aumenta drasticamente o risco de ferimentos em frenagens ou colisões【868518346125771†L2789-L2801】."
+  },
+  {
+    "pergunta": "Por que não devo prender a fita do cinto na porta?",
+    "resposta": "Prender o cinto na porta pode danificar a fita ou os mecanismos, reduzindo a proteção. Cintos danificados devem ser substituídos【868518346125771†L2802-L2831】."
+  },
+  {
+    "pergunta": "O que fazer se a luz do airbag não apagar?",
+    "resposta": "Procure uma concessionária para diagnóstico. A luz indica falha no sistema de airbags ou nos pré‑tensionadores【868518346125771†L844-L849】."
+  },
+  {
+    "pergunta": "Posso colocar objetos no banco do passageiro?",
+    "resposta": "Não é seguro colocar objetos ou animais entre o ocupante e o airbag frontal, pois eles podem ser arremessados com força quando o airbag inflar【868518346125771†L3454-L3473】."
+  },
+  {
+    "pergunta": "Preciso de uma cadeirinha para minha criança?",
+    "resposta": "Sim. Crianças devem sempre ser transportadas em sistemas de retenção apropriados para sua idade, peso e altura, de preferência no banco traseiro【868518346125771†L4048-L4065】."
+  },
+  {
+    "pergunta": "Até que idade ou altura uma criança deve ficar no banco traseiro?",
+    "resposta": "De acordo com a legislação, crianças menores de 10 anos e com menos de 1,45 m de altura devem ser transportadas no banco traseiro com dispositivo apropriado【868518346125771†L4080-L4096】."
+  },
+  {
+    "pergunta": "Posso levar o bebê no banco da frente?",
+    "resposta": "Só se o airbag do passageiro for desativado e a cadeirinha estiver voltada para trás. O manual recomenda utilizar os bancos traseiros sempre que possível【868518346125771†L4066-L4079】."
+  },
+  {
+    "pergunta": "Preciso substituir a cadeirinha depois de uma batida?",
+    "resposta": "Sim. Mesmo que não pareça danificada, a cadeirinha pode ter perdido sua eficácia. Substitua‑a após qualquer colisão【868518346125771†L4116-L4132】."
+  },
+  {
+    "pergunta": "Como devo ajustar o cinto em uma criança maior?",
+    "resposta": "O cinto deve passar pelo meio do ombro e ajustar‑se à bacia, nunca pelo pescoço ou abdômen. Ajustes errados podem causar ferimentos【868518346125771†L4097-L4113】.\n\n## Iluminação e sinalização"
+  },
+  {
+    "pergunta": "Como usar a alavanca das setas?",
+    "resposta": "Para sinalizar à direita, empurre a alavanca para cima; para esquerda, puxe para baixo. Volte a alavanca para o centro após completar a manobra【726097448576567†L6740-L6752】."
+  },
+  {
+    "pergunta": "O que são os piscas de conforto e quando usar?",
+    "resposta": "São flashes rápidos que piscam três vezes quando você toca levemente a alavanca. São úteis para pequenas mudanças de faixa ou ultrapassagens【726097448576567†L6757-L6762】."
+  },
+  {
+    "pergunta": "Posso desligar os piscas de conforto?",
+    "resposta": "Para cancelar o pisca de conforto antes do fim, mova a alavanca levemente no sentido contrário e solte【726097448576567†L6763-L6766】."
+  },
+  {
+    "pergunta": "Como ligar os faróis?",
+    "resposta": "Gire o botão de luzes nas posições: **O** (desligado), **AUTO** (automático), **luz de posição** e **farol baixo**. No modo AUTO, os faróis ligam‑se e desligam‑se conforme a iluminação externa【726097448576567†L6809-L6815】."
+  },
+  {
+    "pergunta": "Quando devo ligar o farol baixo?",
+    "resposta": "Use o farol baixo à noite, em neblina ou quando houver pouca visibilidade. A luz de posição sozinha não é suficiente para iluminar a via【726097448576567†L6868-L6875】."
+  },
+  {
+    "pergunta": "Posso confiar apenas na luz de posição à noite?",
+    "resposta": "Não. A luz de posição serve apenas para sinalizar a presença do veículo e não ilumina a pista. Sempre ligue o farol baixo em baixa visibilidade【726097448576567†L6868-L6875】."
+  },
+  {
+    "pergunta": "O que são as luzes diurnas (DRL)?",
+    "resposta": "São luzes que acendem automaticamente durante o dia para tornar o veículo mais visível. Elas ligam quando a ignição é ativada, se o interruptor estiver em **O**, **AUTO** ou **luz de posição**, e há claridade suficiente【726097448576567†L6836-L6845】."
+  },
+  {
+    "pergunta": "Quando devo usar a luz alta?",
+    "resposta": "Use a luz alta apenas em vias sem tráfego à frente e com pouca iluminação, para melhorar a visibilidade. Desligue‑a ao se aproximar de outros veículos para não ofuscar【868518346125771†L876-L907】."
+  },
+  {
+    "pergunta": "Preciso acender os faróis mesmo com função AUTO?",
+    "resposta": "Em geral, o modo AUTO liga os faróis conforme a iluminação. Porém, em condições especiais como neblina densa ou chuva forte, é recomendável ligar manualmente o farol baixo【726097448576567†L6809-L6815】【726097448576567†L6868-L6875】."
+  },
+  {
+    "pergunta": "Como ligar as luzes de emergência (pisca‑alerta)?",
+    "resposta": "Pressione o botão do triângulo localizado no painel. Todas as setas piscarão ao mesmo tempo para sinalizar perigo ou pane【726097448576567†L5085-L5093】."
+  },
+  {
+    "pergunta": "Como ajustar o relógio do painel?",
+    "resposta": "Para ajustar o relógio nos instrumentos analógicos, pressione o botão com símbolo de relógio para escolher horas ou minutos e utilize o botão **k/SET** para aumentar os números; mantenha-o pressionado para avançar mais rápido【726097448576567†L1905-L1919】. Nos instrumentos digitais (Active Info Display), acesse o menu **Dados de viagem**, selecione o indicador **Autonomia**, mantenha o botão **OK** no volante pressionado por cerca de cinco segundos para abrir o menu de serviços, escolha **Hora** e ajuste com os botões de seta【726097448576567†L1921-L1931】."
+  },
+  {
+    "pergunta": "O que é a função ESS (sinal de frenagem de emergência)?",
+    "resposta": "Em frenagens muito fortes, o carro pisca rapidamente as luzes de freio e pode acionar automaticamente o pisca‑alerta para avisar quem vem atrás【726097448576567†L5101-L5114】.\n\n## Emergências e manutenção"
+  },
+  {
+    "pergunta": "O que devo fazer se precisar parar em emergência?",
+    "resposta": "Pare em local seguro, ligue o pisca‑alerta, acione o freio de estacionamento, coloque o câmbio em neutro (ou **P**), desligue o motor, retire a chave, retire os ocupantes e coloque o triângulo de segurança【726097448576567†L5027-L5064】."
+  },
+  {
+    "pergunta": "Como zerar o hodômetro parcial (trip)?",
+    "resposta": "O hodômetro parcial registra os quilômetros percorridos desde a última zeragem. Em veículos com painel analógico, pressione o botão **k/SET** por cerca de dois segundos para voltar o indicador a zero【726097448576567†L1072-L1076】. Nos modelos com painel digital, utilize as setas no volante para acessar o menu **Dados de viagem**, selecione o indicador **trip** e pressione o botão **OK** para reiniciar【726097448576567†L1420-L1428】."
+  },
+  {
+    "pergunta": "Como usar o triângulo de segurança?",
+    "resposta": "Após estacionar o veículo em segurança, coloque o triângulo a uma distância adequada para alertar os demais motoristas. O manual recomenda utilizar esse dispositivo em todas as paradas de emergência【726097448576567†L5027-L5064】."
+  },
+  {
+    "pergunta": "O que significa a mensagem “SERVIÇO” no painel?",
+    "resposta": "É um aviso de que o veículo está próximo de uma revisão programada ou passou da quilometragem/mês indicado. Agende a manutenção【868518346125771†L908-L934】."
+  },
+  {
+    "pergunta": "Preciso levar o carro para revisão quando aparece um aviso?",
+    "resposta": "Sim. A luz de serviço ou a mensagem no display indicam que é hora de realizar a manutenção, o que ajuda a prevenir falhas【868518346125771†L908-L934】."
+  },
+  {
+    "pergunta": "Por que o carro pede revisão com luz de chave inglesa?",
+    "resposta": "A luz de chave inglesa é um lembrete de revisão. Ela aparece conforme a quilometragem ou tempo decorrido desde a última manutenção【868518346125771†L908-L934】."
+  },
+  {
+    "pergunta": "O que fazer se a luz do freio de estacionamento e do ABS acenderem juntas?",
+    "resposta": "Esse combinado indica possível falha grave no sistema de freios. Pare o veículo com segurança e chame assistência【868518346125771†L744-L756】【868518346125771†L799-L815】."
+  },
+  {
+    "pergunta": "Como saber se o carro está superaquecendo?",
+    "resposta": "Se a luz vermelha de temperatura do líquido de arrefecimento acender ou piscar, o motor está superaquecendo. Pare imediatamente e desligue o motor【868518346125771†L757-L762】."
+  },
+  {
+    "pergunta": "O que fazer se o motor esquentar demais?",
+    "resposta": "Pare o carro, desligue o motor e aguarde esfriar. Não abra o radiador enquanto o motor estiver quente. Verifique o nível do líquido quando estiver frio【868518346125771†L757-L762】."
+  },
+  {
+    "pergunta": "Quando a luz de combustível acende, quanto tempo ainda posso andar?",
+    "resposta": "A luz indica que você está usando a reserva; não há quilometragem exata. Reabasteça o quanto antes para evitar parada súbita e danos ao sistema【868518346125771†L1226-L1263】."
+  },
+  {
+    "pergunta": "Por que não é recomendável rodar com o tanque vazio?",
+    "resposta": "Rodar com o tanque quase vazio pode causar falta de combustível ao motor, perda de assistência dos freios e da direção e até danificar o catalisador【868518346125771†L1226-L1263】."
+  },
+  {
+    "pergunta": "Quando devo abastecer (1/4 do tanque)?",
+    "resposta": "O manual recomenda planejar o abastecimento quando o ponteiro se aproxima de 1/4 do tanque, evitando ficar sem combustível【868518346125771†L1226-L1263】."
+  },
+  {
+    "pergunta": "O que significa a seta ao lado do símbolo de combustível?",
+    "resposta": "A pequena seta mostra de que lado do veículo fica a tampa do tanque, ajudando a posicionar o carro ao abastecer【868518346125771†L1226-L1263】."
+  },
+  {
+    "pergunta": "Posso deixar a gasolina acabar para não “viciar” o tanque?",
+    "resposta": "Não. Deixar o tanque esvaziar por completo pode causar falhas de motor e danos ao catalisador. Mantenha sempre combustível suficiente【868518346125771†L1226-L1263】."
+  },
+  {
+    "pergunta": "Por que o sistema Start‑Stop às vezes não funciona?",
+    "resposta": "O sistema pode não desligar o motor se a bateria estiver fraca, se a temperatura do motor não for adequada ou se houver uso intenso do ar‑condicionado ou outros consumidores【868518346125771†L876-L907】."
+  },
+  {
+    "pergunta": "É seguro desativar o controle de tração?",
+    "resposta": "Não é recomendável. O controle de tração ajuda a evitar derrapagens; desligá‑lo pode dificultar o controle do veículo, especialmente em piso molhado【868518346125771†L790-L797】."
+  },
+  {
+    "pergunta": "O que significa se o volante ficar pesado?",
+    "resposta": "Uma luz de volante acesa ou piscando e o volante pesado indicam falha na direção assistida. A assistência pode diminuir; procure uma oficina【868518346125771†L769-L775】."
+  },
+  {
+    "pergunta": "Posso desligar o controle de tração manualmente?",
+    "resposta": "Em alguns modelos, há botão para desligar o ASR. Quando desligado, a luz “ASR OFF” acende; use essa função apenas em situações específicas e reative o sistema depois【868518346125771†L790-L797】."
+  },
+  {
+    "pergunta": "Como evitar que crianças mexam nos vidros elétricos?",
+    "resposta": "Nunca deixe crianças sozinhas no veículo. Retire a chave ao sair e use os bloqueios de segurança dos vidros (quando existentes)【726097448576567†L6198-L6207】."
+  },
+  {
+    "pergunta": "O que acontece quando se trava o carro por dentro?",
+    "resposta": "Ao travar com o botão interno, as portas e a tampa traseira ficam trancadas, mas o alarme não é ativado; as portas podem ser abertas puxando a maçaneta de dentro【726097448576567†L5711-L5721】."
+  },
+  {
+    "pergunta": "Como travar manualmente as outras portas se o travamento central falhar?",
+    "resposta": "Utilize a chave para acionar manualmente a lingueta de cada porta, conforme descrito no manual. Após fechar, essas portas só poderão ser abertas por dentro【726097448576567†L5777-L5792】."
+  },
+  {
+    "pergunta": "Quando as janelas se fecham automaticamente com a chave, posso parar o movimento?",
+    "resposta": "Sim. Se estiver utilizando a função de conforto com o controle remoto, basta soltar o botão para interromper a abertura ou fechamento【726097448576567†L6182-L6188】【726097448576567†L6174-L6176】."
+  },
+  {
+    "pergunta": "O que devo fazer se o alarme tocar sozinho?",
+    "resposta": "Se o alarme disparar sem motivo, pode ser um movimento interno ou porta mal fechada. Desative destravando com a chave; se persistir, verifique sensores ou consulte uma concessionária【726097448576567†L5872-L5903】."
+  },
+  {
+    "pergunta": "Posso desativar temporariamente o sensor interno do alarme?",
+    "resposta": "Sim. Em algumas versões, é possível desativar o monitoramento interno (por exemplo, em um lava‑rápido) através do menu do veículo no rádio【726097448576567†L5927-L5956】."
+  },
+  {
+    "pergunta": "Como evitar que as crianças acionem os vidros ou portas por engano?",
+    "resposta": "Use as travas de segurança e o bloqueio dos vidros, nunca deixe crianças sozinhas no veículo e retire a chave da ignição ao sair【726097448576567†L6198-L6207】."
+  }
+]
