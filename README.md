@@ -52,7 +52,7 @@ Para cada pergunta, o script gera duas respostas:
 ├── rag_hf_optimized.py
 ├── run_rag_cli.py
 ├── analises-modelo1.ipynb
-├── analises-modelo2-.ipynb
+├── analises-modelo2.ipynb
 ├── rag_cli_output_deepseek-ai_DeepSeek-R1-Distill-Llama-8B_20260312_145726.json
 ├── rag_cli_output_deepseek-ai_DeepSeek-R1-Distill-Qwen-7B_20260311_104139.json
 └── requirements.txt
@@ -278,7 +278,7 @@ As análises ficam em:
 
 - `analises-modelo1.ipynb`: calcula métricas e visualizações para um conjunto
   de resultados.
-- `analises-modelo2-.ipynb`: repete a análise para outro conjunto de
+- `analises-modelo2.ipynb`: repete a análise para outro conjunto de
   resultados/modelo.
 
 As principais figuras geradas estão em:
