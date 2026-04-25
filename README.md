@@ -5,7 +5,7 @@
   <img width="800" src="./figures/conect2ai_logo.jpg" alt="Conect2AI">
 </p>
 
-# Cadeia de Raciocínio em Sistemas de Geração Baseados em Recuperação: Influência da Organização do Contexto
+# Cadeias de Raciocínio em Sistemas de Geração Baseados em Recuperação: Influência da Organização do Contexto
 
 ### Autores: [Thaís Medeiros](https://github.com/thaisaraujom), [Marianne Silva](https://github.com/MarianneDiniz), [Ivanovitch Silva](https://github.com/ivanovitchm)
 
@@ -292,4 +292,4 @@ Leitura visual:
 - Boxplots de CoT: respostas corretas tendem a ter maior cobertura da CoT no
   contexto.
 - Heatmaps de chunks: no cenário original há leve concentração na primeira
-  posição; no embaralhado a cobertura fica mais homogênea ao longo dos chunks.
+  posição; no embaralhado, a cobertura fica mais homogênea ao longo dos chunks.
