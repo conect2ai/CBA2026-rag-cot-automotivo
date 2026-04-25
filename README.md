@@ -40,10 +40,10 @@ Para cada pergunta, o script gera duas respostas:
 ├── figures/
 │   └── conect2ai_logo.jpg
 ├── img/
-│   ├── chunk_heatmap_modelo_1.pdf
-│   ├── chunk_heatmap_modelo_2.pdf
-│   ├── cot_boxplot_modelo_1.pdf
-│   └── cot_boxplot_modelo_2.pdf
+│   ├── cot_boxplot_model1.pdf
+│   ├── cot_boxplot_model2.pdf
+│   ├── cot_heatmap_model1.pdf
+│   └── cot_heatmap_model2.pdf
 ├── markdown_manuals/
 │   └── Volkswagen_Polo_2025.md
 ├── Volkswagen_Polo_2025.pdf
@@ -53,6 +53,8 @@ Para cada pergunta, o script gera duas respostas:
 ├── run_rag_cli.py
 ├── analises-modelo1.ipynb
 ├── analises-modelo2.ipynb
+├── tabelas-analise-modelo1.md
+├── tabelas-analise-modelo2.md
 ├── rag_cli_output_deepseek-ai_DeepSeek-R1-Distill-Llama-8B_20260312_145726.json
 ├── rag_cli_output_deepseek-ai_DeepSeek-R1-Distill-Qwen-7B_20260311_104139.json
 └── requirements.txt
@@ -67,7 +69,8 @@ Para cada pergunta, o script gera duas respostas:
 - `rag_hf_optimized.py`: funções de recuperação, geração e extração de CoT.
 - `run_rag_cli.py`: execução do RAG em lote.
 - `rag_cli_output_*.json`: resultados gerados pelos modelos.
-- `analises-modelo1.ipynb` e `analises-modelo2-.ipynb`: análise dos resultados.
+- `analises-modelo1.ipynb` e `analises-modelo2.ipynb`: análise dos resultados.
+- `tabelas-analise-modelo1.md` e `tabelas-analise-modelo2.md`: tabelas exportadas das análises.
 - `img/`: figuras geradas nas análises.
 
 ## Resultados
@@ -90,54 +93,46 @@ embaralhada. A diferença entre os cenários é apenas a organização do contex
 | Modelo 2 | Original | 0,46 | 0,47 | 0,42 |
 | Modelo 2 | Shuffled | 0,47 | 0,50 | 0,47 |
 
-O embaralhamento não prejudicou o desempenho final. Nos dois modelos houve uma
-melhora discreta nas métricas agregadas.
+O cenário embaralhado não produziu queda nas métricas finais. Nos dois modelos,
+as métricas agregadas permaneceram próximas entre os cenários, com variações
+discretas e, em alguns casos, leve aumento.
 
 ### Métricas da CoT
 
 | Modelo | Cenário | Cobertura | Novidade | Entropia | Chunks usados |
 | --- | --- | ---: | ---: | ---: | ---: |
-| Modelo 1 | Original | 0,35 | 0,65 | 1,55 | 4,98 |
-| Modelo 1 | Shuffled | 0,32 | 0,68 | 1,54 | 4,94 |
-| Modelo 2 | Original | 0,35 | 0,65 | 1,55 | 4,98 |
-| Modelo 2 | Shuffled | 0,33 | 0,67 | 1,54 | 4,92 |
+| Modelo 1 | Original | 0,36 | 0,64 | 1,56 | 4,98 |
+| Modelo 1 | Shuffled | 0,33 | 0,67 | 1,54 | 4,95 |
+| Modelo 2 | Original | 0,36 | 0,64 | 1,56 | 4,98 |
+| Modelo 2 | Shuffled | 0,34 | 0,66 | 1,54 | 4,96 |
 
 Com o contexto embaralhado, a cobertura da CoT diminui e a novidade aumenta. A
 quantidade média de chunks usados permanece próxima de cinco, indicando que o
-raciocínio continua distribuído pelo contexto, mas fica menos ancorado nele.
+raciocínio continua distribuído pelo contexto, mas com menor apoio lexical nos
+trechos recuperados.
 
 ### Variação Média (`shuffled - original`)
 
 | Modelo | Δ F1 | Δ Cobertura CoT | Δ Novidade | Δ Entropia | Δ Support Rate |
 | --- | ---: | ---: | ---: | ---: | ---: |
 | Modelo 1 | 0,01 | -0,03 | 0,03 | -0,02 | -0,02 |
-| Modelo 2 | 0,01 | -0,02 | 0,02 | -0,02 | 0,01 |
+| Modelo 2 | 0,01 | -0,02 | 0,02 | -0,01 | 0,01 |
 
 O efeito mais claro aparece na estrutura da CoT, não no desempenho final: as
-respostas ficam parecidas em qualidade, mas o raciocínio se torna menos coberto
-pelo contexto recuperado.
+respostas permanecem próximas em qualidade, mas o raciocínio apresenta menor
+cobertura em relação ao contexto recuperado.
 
 ### Acertos vs. Erros
 
 | Modelo | Tipo | Cobertura CoT | Novidade | Doubt Count |
 | --- | --- | ---: | ---: | ---: |
-| Modelo 1 | Erro | 0,28 | 0,72 | 0,63 |
-| Modelo 1 | Acerto | 0,41 | 0,59 | 0,17 |
-| Modelo 2 | Erro | 0,28 | 0,72 | 0,79 |
-| Modelo 2 | Acerto | 0,41 | 0,59 | 0,12 |
+| Modelo 1 | Erro | 0,29 | 0,71 | 0,63 |
+| Modelo 1 | Acerto | 0,42 | 0,58 | 0,18 |
+| Modelo 2 | Erro | 0,29 | 0,71 | 0,78 |
+| Modelo 2 | Acerto | 0,42 | 0,58 | 0,12 |
 
 Respostas corretas apresentam maior cobertura da CoT e menor novidade. Já
 respostas incorretas apresentam mais marcadores de incerteza (`doubt count`).
-
-### Conclusões Curtas
-
-| Ponto | Síntese |
-| --- | --- |
-| Desempenho final | O cenário `shuffled` teve melhora pequena de F1 e sucesso. |
-| CoT | O embaralhamento reduziu a cobertura e aumentou a novidade. |
-| Uso dos chunks | O número médio de chunks usados permaneceu quase igual. |
-| Acertos | Respostas corretas tendem a ter CoT mais ancorada no contexto. |
-| Erros | Respostas incorretas tendem a ter mais novidade e incerteza. |
 
 ## Como Rodar
 
@@ -234,7 +229,7 @@ python run_rag_cli.py \
 ```
 
 O script salva os resultados incrementalmente. Se a execução parar no meio, rode
-o mesmo comando de novo com o mesmo `--output`; as perguntas já processadas são
+o mesmo comando de novo com o mesmo `--output`. Assim, as perguntas já processadas são
 ignoradas.
 
 ### 7. Rodar as análises
@@ -246,7 +241,8 @@ analises-modelo1.ipynb
 analises-modelo2.ipynb
 ```
 
-Eles leem os arquivos `rag_cli_output_*.json` e geram as figuras em `img/`.
+Eles leem os arquivos `rag_cli_output_*.json`, calculam as métricas e geram as
+figuras em `img/`.
 
 ## Formato dos Resultados
 
@@ -276,25 +272,24 @@ Campos principais dentro de `original` e `shuffled`:
 
 As análises ficam em:
 
-- `analises-modelo1.ipynb`: calcula métricas e visualizações para um conjunto
-  de resultados.
-- `analises-modelo2.ipynb`: repete a análise para outro conjunto de
-  resultados/modelo.
+- `analises-modelo1.ipynb`: calcula métricas e visualizações para o Modelo 1.
+- `analises-modelo2.ipynb`: calcula métricas e visualizações para o Modelo 2.
+
+As tabelas exportadas ficam em:
+
+- `tabelas-analise-modelo1.md`: tabelas da análise do Modelo 1.
+- `tabelas-analise-modelo2.md`: tabelas da análise do Modelo 2.
 
 As principais figuras geradas estão em:
 
-- `img/chunk_heatmap_modelo_1.pdf`: cobertura por posição dos chunks no
-  primeiro modelo.
-- `img/chunk_heatmap_modelo_2.pdf`: cobertura por posição dos chunks no
-  segundo modelo.
-- `img/cot_boxplot_modelo_1.pdf`: cobertura da cadeia de raciocínio no primeiro
-  modelo.
-- `img/cot_boxplot_modelo_2.pdf`: cobertura da cadeia de raciocínio no segundo
-  modelo.
+- `img/cot_boxplot_model1.pdf`: cobertura da cadeia de raciocínio no Modelo 1.
+- `img/cot_boxplot_model2.pdf`: cobertura da cadeia de raciocínio no Modelo 2.
+- `img/cot_heatmap_model1.pdf`: cobertura por posição dos chunks no Modelo 1.
+- `img/cot_heatmap_model2.pdf`: cobertura por posição dos chunks no Modelo 2.
 
-Leitura visual resumida:
+Leitura visual:
 
 - Boxplots de CoT: respostas corretas tendem a ter maior cobertura da CoT no
   contexto.
-- Heatmaps de chunks: no cenário original há leve concentração nos primeiros
-  chunks; no embaralhado a cobertura fica mais distribuída.
+- Heatmaps de chunks: no cenário original há leve concentração na primeira
+  posição; no embaralhado a cobertura fica mais homogênea ao longo dos chunks.
