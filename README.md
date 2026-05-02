@@ -26,12 +26,12 @@ O pipeline segue quatro etapas:
 1. O PDF do manual é convertido para Markdown.
 2. O texto é segmentado em chunks e indexado no Milvus.
 3. O RAG recupera os chunks mais relevantes para cada pergunta.
-4. As respostas são comparadas nos cenários `original` e `shuffled`.
+4. As respostas são comparadas nos cenários original e embaralhado.
 
 Para cada pergunta, o script gera duas respostas:
 
-- `original`: usa os chunks na ordem retornada pela busca vetorial no Milvus.
-- `shuffled`: usa os mesmos chunks, mas com a ordem embaralhada.
+- Original: usa os chunks na ordem retornada pela busca vetorial no Milvus.
+- Embaralhado: usa os mesmos chunks, mas com a ordem embaralhada.
 
 ## Estrutura do Repositório
 
@@ -82,23 +82,23 @@ Para cada pergunta, o script gera duas respostas:
 
 ## Resultados
 
-Os resultados comparam dois modelos em dois cenários: `original`, com os chunks
-na ordem da recuperação, e `shuffled`, com os mesmos chunks em ordem
+Os resultados comparam dois modelos em dois cenários: original, com os chunks
+na ordem da recuperação, e embaralhado, com os mesmos chunks em ordem
 embaralhada. A diferença entre os cenários é apenas a organização do contexto.
 
 | Identificação | Modelo | Perguntas | Cenários |
 | --- | --- | ---: | --- |
-| Modelo 1 | `DeepSeek-R1-Distill-Llama-8B-4bit` | 50 | `original`, `shuffled` |
-| Modelo 2 | `DeepSeek-R1-Distill-Qwen-7B-4bit` | 50 | `original`, `shuffled` |
+| Modelo 1 | `DeepSeek-R1-Distill-Llama-8B-4bit` | 50 | Original, Embaralhado |
+| Modelo 2 | `DeepSeek-R1-Distill-Qwen-7B-4bit` | 50 | Original, Embaralhado |
 
 ### Desempenho
 
 | Modelo | Cenário | F1 médio | Mediana F1 | Sucesso |
 | --- | --- | ---: | ---: | ---: |
 | Modelo 1 | Original | 0,66 | 0,64 | 0,96 |
-| Modelo 1 | Shuffled | 0,65 | 0,65 | 0,88 |
+| Modelo 1 | Embaralhado | 0,65 | 0,65 | 0,88 |
 | Modelo 2 | Original | 0,62 | 0,63 | 0,84 |
-| Modelo 2 | Shuffled | 0,64 | 0,64 | 0,86 |
+| Modelo 2 | Embaralhado | 0,64 | 0,64 | 0,86 |
 
 O efeito do embaralhamento não foi uniforme entre os modelos. O Modelo 1
 apresentou leve queda no F1 médio e na taxa de sucesso, enquanto o Modelo 2 teve
@@ -109,15 +109,15 @@ pequeno aumento nas métricas finais.
 | Modelo | Cenário | Cobertura | Novidade | Entropia | Chunks usados |
 | --- | --- | ---: | ---: | ---: | ---: |
 | Modelo 1 | Original | 0,17 | 0,83 | 2,02 | 7,96 |
-| Modelo 1 | Shuffled | 0,14 | 0,86 | 1,99 | 7,86 |
+| Modelo 1 | Embaralhado | 0,14 | 0,86 | 1,99 | 7,86 |
 | Modelo 2 | Original | 0,53 | 0,47 | 2,05 | 8,00 |
-| Modelo 2 | Shuffled | 0,56 | 0,44 | 2,05 | 8,00 |
+| Modelo 2 | Embaralhado | 0,56 | 0,44 | 2,05 | 8,00 |
 
 No Modelo 1, o cenário embaralhado reduz a cobertura da CoT e aumenta a
 novidade. No Modelo 2, ocorre o movimento inverso, com maior cobertura e menor
 novidade quando os mesmos trechos são reorganizados.
 
-### Variação Média (`shuffled - original`)
+### Variação Média (embaralhado - original)
 
 | Modelo | Δ F1 | Δ Cobertura CoT | Δ Novidade | Δ Entropia | Δ Support Rate |
 | --- | ---: | ---: | ---: | ---: | ---: |
