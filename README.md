@@ -11,7 +11,7 @@
 
 Este repositório reúne um estudo de caso sobre RAG
 (Retrieval-Augmented Generation) para responder perguntas técnicas sobre o
-manual do Volkswagen Polo 2025. O fluxo transforma o manual em uma base textual
+manual do Renault Kwid 2024. O fluxo transforma o manual em uma base textual
 pesquisável, indexa os trechos em um banco vetorial e compara respostas geradas
 com o mesmo contexto em duas organizações diferentes.
 
@@ -42,33 +42,40 @@ Para cada pergunta, o script gera duas respostas:
 ├── img/
 │   ├── cot_boxplot_model1.pdf
 │   ├── cot_boxplot_model2.pdf
+│   ├── cot_delta_model1.pdf
+│   ├── cot_delta_model2.pdf
 │   ├── cot_heatmap_model1.pdf
-│   └── cot_heatmap_model2.pdf
+│   ├── cot_heatmap_model2.pdf
+│   ├── cot_success_model1.pdf
+│   └── cot_success_model2.pdf
 ├── markdown_manuals/
-│   └── Volkswagen_Polo_2025.md
-├── Volkswagen_Polo_2025.pdf
+│   └── Renault_Kwid_Nov24.md
+├── Renault_Kwid_2024.pdf
 ├── preprocessing.ipynb
-├── perguntas_respostas_Polo_2025.json
+├── perguntas_respostas_Kwid_Nov24_50.json
 ├── rag_hf_optimized.py
 ├── run_rag_cli.py
 ├── analises-modelo1.ipynb
 ├── analises-modelo2.ipynb
 ├── tabelas-analise-modelo1.md
 ├── tabelas-analise-modelo2.md
-├── rag_cli_output_deepseek-ai_DeepSeek-R1-Distill-Llama-8B_20260312_145726.json
-├── rag_cli_output_deepseek-ai_DeepSeek-R1-Distill-Qwen-7B_20260311_104139.json
+├── rag_cli_output_mlx_DeepSeek-R1-Distill-Llama-8B-4bit_Kwid_Nov24_50.json
+├── rag_cli_output_mlx_DeepSeek-R1-Distill-Qwen-7B-4bit_Kwid_Nov24_50.json
+├── logs_rag_cli_mlx_deepseek_kwid_nov24_50.json
+├── logs_rag_cli_mlx_deepseek_llama8b_kwid_nov24_50.json
 └── requirements.txt
 ```
 
 ## Arquivos
 
-- `Volkswagen_Polo_2025.pdf`: manual original usado como base de conhecimento.
+- `Renault_Kwid_2024.pdf`: manual original usado como base de conhecimento.
 - `preprocessing.ipynb`: conversão, chunking, embeddings e ingestão no Milvus.
-- `markdown_manuals/Volkswagen_Polo_2025.md`: versão em Markdown do manual.
-- `perguntas_respostas_Polo_2025.json`: perguntas e respostas de referência.
+- `markdown_manuals/Renault_Kwid_Nov24.md`: versão em Markdown do manual.
+- `perguntas_respostas_Kwid_Nov24_50.json`: perguntas e respostas de referência.
 - `rag_hf_optimized.py`: funções de recuperação, geração e extração de CoT.
 - `run_rag_cli.py`: execução do RAG em lote.
 - `rag_cli_output_*.json`: resultados gerados pelos modelos.
+- `logs_rag_cli_*.json`: registros de execução dos experimentos.
 - `analises-modelo1.ipynb` e `analises-modelo2.ipynb`: análise dos resultados.
 - `tabelas-analise-modelo1.md` e `tabelas-analise-modelo2.md`: tabelas exportadas das análises.
 - `img/`: figuras geradas nas análises.
@@ -81,55 +88,55 @@ embaralhada. A diferença entre os cenários é apenas a organização do contex
 
 | Identificação | Modelo | Perguntas | Cenários |
 | --- | --- | ---: | --- |
-| Modelo 1 | `DeepSeek-R1-Distill-Llama-8B` | 100 | `original`, `shuffled` |
-| Modelo 2 | `DeepSeek-R1-Distill-Qwen-7B` | 100 | `original`, `shuffled` |
+| Modelo 1 | `DeepSeek-R1-Distill-Llama-8B-4bit` | 50 | `original`, `shuffled` |
+| Modelo 2 | `DeepSeek-R1-Distill-Qwen-7B-4bit` | 50 | `original`, `shuffled` |
 
 ### Desempenho
 
 | Modelo | Cenário | F1 médio | Mediana F1 | Sucesso |
 | --- | --- | ---: | ---: | ---: |
-| Modelo 1 | Original | 0,47 | 0,47 | 0,42 |
-| Modelo 1 | Shuffled | 0,48 | 0,50 | 0,49 |
-| Modelo 2 | Original | 0,46 | 0,47 | 0,42 |
-| Modelo 2 | Shuffled | 0,47 | 0,50 | 0,47 |
+| Modelo 1 | Original | 0,66 | 0,64 | 0,96 |
+| Modelo 1 | Shuffled | 0,65 | 0,65 | 0,88 |
+| Modelo 2 | Original | 0,62 | 0,63 | 0,84 |
+| Modelo 2 | Shuffled | 0,64 | 0,64 | 0,86 |
 
-O cenário embaralhado não produziu queda nas métricas finais. Nos dois modelos,
-as métricas agregadas permaneceram próximas entre os cenários, com variações
-discretas e, em alguns casos, leve aumento.
+O efeito do embaralhamento não foi uniforme entre os modelos. O Modelo 1
+apresentou leve queda no F1 médio e na taxa de sucesso, enquanto o Modelo 2 teve
+pequeno aumento nas métricas finais.
 
 ### Métricas da CoT
 
 | Modelo | Cenário | Cobertura | Novidade | Entropia | Chunks usados |
 | --- | --- | ---: | ---: | ---: | ---: |
-| Modelo 1 | Original | 0,36 | 0,64 | 1,56 | 4,98 |
-| Modelo 1 | Shuffled | 0,33 | 0,67 | 1,54 | 4,95 |
-| Modelo 2 | Original | 0,36 | 0,64 | 1,56 | 4,98 |
-| Modelo 2 | Shuffled | 0,34 | 0,66 | 1,54 | 4,96 |
+| Modelo 1 | Original | 0,17 | 0,83 | 2,02 | 7,96 |
+| Modelo 1 | Shuffled | 0,14 | 0,86 | 1,99 | 7,86 |
+| Modelo 2 | Original | 0,53 | 0,47 | 2,05 | 8,00 |
+| Modelo 2 | Shuffled | 0,56 | 0,44 | 2,05 | 8,00 |
 
-Com o contexto embaralhado, a cobertura da CoT diminui e a novidade aumenta. A
-quantidade média de chunks usados permanece próxima de cinco, indicando que o
-raciocínio continua distribuído pelo contexto, mas com menor apoio lexical nos
-trechos recuperados.
+No Modelo 1, o cenário embaralhado reduz a cobertura da CoT e aumenta a
+novidade. No Modelo 2, ocorre o movimento inverso, com maior cobertura e menor
+novidade quando os mesmos trechos são reorganizados.
 
 ### Variação Média (`shuffled - original`)
 
 | Modelo | Δ F1 | Δ Cobertura CoT | Δ Novidade | Δ Entropia | Δ Support Rate |
 | --- | ---: | ---: | ---: | ---: | ---: |
-| Modelo 1 | 0,01 | -0,03 | 0,03 | -0,02 | -0,02 |
-| Modelo 2 | 0,01 | -0,02 | 0,02 | -0,01 | 0,01 |
+| Modelo 1 | -0,01 | -0,04 | 0,04 | -0,03 | -0,01 |
+| Modelo 2 | 0,02 | 0,04 | -0,04 | 0,00 | 0,03 |
 
-O efeito mais claro aparece na estrutura da CoT, não no desempenho final: as
-respostas permanecem próximas em qualidade, mas o raciocínio apresenta menor
-cobertura em relação ao contexto recuperado.
+As variações reforçam que a ordem dos trechos afeta os modelos em direções
+distintas. A queda de cobertura no Modelo 1 acompanha uma pequena redução no
+desempenho, enquanto o aumento de cobertura no Modelo 2 coincide com melhora nas
+métricas finais.
 
 ### Acertos vs. Erros
 
 | Modelo | Tipo | Cobertura CoT | Novidade | Doubt Count |
 | --- | --- | ---: | ---: | ---: |
-| Modelo 1 | Erro | 0,29 | 0,71 | 0,63 |
-| Modelo 1 | Acerto | 0,42 | 0,58 | 0,18 |
-| Modelo 2 | Erro | 0,29 | 0,71 | 0,78 |
-| Modelo 2 | Acerto | 0,42 | 0,58 | 0,12 |
+| Modelo 1 | Erro | 0,09 | 0,91 | 0,63 |
+| Modelo 1 | Acerto | 0,16 | 0,84 | 0,25 |
+| Modelo 2 | Erro | 0,47 | 0,53 | 0,47 |
+| Modelo 2 | Acerto | 0,56 | 0,44 | 0,02 |
 
 Respostas corretas apresentam maior cobertura da CoT e menor novidade. Já
 respostas incorretas apresentam mais marcadores de incerteza (`doubt count`).
@@ -179,8 +186,8 @@ huggingface-cli login
 
 Abra `preprocessing.ipynb` no VS Code e execute as células em ordem. Esse passo:
 
-1. Converte `Volkswagen_Polo_2025.pdf` para Markdown.
-2. Gera `markdown_manuals/Volkswagen_Polo_2025.md`.
+1. Converte `Renault_Kwid_2024.pdf` para Markdown.
+2. Gera `markdown_manuals/Renault_Kwid_Nov24.md`.
 3. Divide o manual em chunks.
 4. Gera embeddings com `sentence-transformers/all-MiniLM-L6-v2`.
 5. Cria ou reutiliza a coleção `manuals_open` no Milvus.
@@ -194,7 +201,7 @@ existir.
 O arquivo de entrada é:
 
 ```text
-perguntas_respostas_Polo_2025.json
+perguntas_respostas_Kwid_Nov24_50.json
 ```
 
 Ele deve conter uma lista de objetos com o campo `pergunta`. O campo `resposta`
@@ -202,30 +209,34 @@ Ele deve conter uma lista de objetos com o campo `pergunta`. O campo `resposta`
 
 ### 6. Rodar o RAG
 
-Para o modelo Qwen 7B:
+Para o modelo Qwen 7B com backend MLX, usado nas execuções em Apple Silicon:
 
 ```bash
 python run_rag_cli.py \
-  --model deepseek-ai/DeepSeek-R1-Distill-Qwen-7B \
-  --input perguntas_respostas_Polo_2025.json \
-  --output rag_cli_output_deepseek-ai_DeepSeek-R1-Distill-Qwen-7B.json \
-  --brand Volkswagen \
-  --car_model Polo \
-  --year 2025 \
-  --top_k 5
+  --backend mlx \
+  --model mlx-community/DeepSeek-R1-Distill-Qwen-7B-4bit \
+  --input perguntas_respostas_Kwid_Nov24_50.json \
+  --output rag_cli_output_mlx_DeepSeek-R1-Distill-Qwen-7B-4bit_Kwid_Nov24_50.json \
+  --brand Renault \
+  --car_model Kwid \
+  --year 2024 \
+  --top_k 8 \
+  --max_new_tokens 250
 ```
 
-Para o modelo Llama 8B:
+Para o modelo Llama 8B com backend MLX:
 
 ```bash
 python run_rag_cli.py \
-  --model deepseek-ai/DeepSeek-R1-Distill-Llama-8B \
-  --input perguntas_respostas_Polo_2025.json \
-  --output rag_cli_output_deepseek-ai_DeepSeek-R1-Distill-Llama-8B.json \
-  --brand Volkswagen \
-  --car_model Polo \
-  --year 2025 \
-  --top_k 5
+  --backend mlx \
+  --model mlx-community/DeepSeek-R1-Distill-Llama-8B-4bit \
+  --input perguntas_respostas_Kwid_Nov24_50.json \
+  --output rag_cli_output_mlx_DeepSeek-R1-Distill-Llama-8B-4bit_Kwid_Nov24_50.json \
+  --brand Renault \
+  --car_model Kwid \
+  --year 2024 \
+  --top_k 8 \
+  --max_new_tokens 250
 ```
 
 O script salva os resultados incrementalmente. Se a execução parar no meio, rode

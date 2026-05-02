@@ -28,8 +28,11 @@ Milvus existente e mantêm o comportamento do notebook original.
 import random
 import re
 import json
+import os
 from datetime import datetime
 from typing import Tuple, Optional, List, Dict
+
+os.environ.setdefault("PYTORCH_ENABLE_MPS_FALLBACK", "1")
 
 import torch
 from transformers import AutoTokenizer, AutoModelForCausalLM
@@ -46,17 +49,28 @@ from pymilvus import MilvusClient
 # para ``generation_answer``. Mantenha este valor como um padrão razoável.
 MODEL_NAME = "deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B"
 
-# Carrega o tokenizer e o modelo padrão uma vez na importação do módulo. A
-# função auxiliar ``load_model`` abaixo pode ser usada para carregar modelos
-# diferentes sob demanda. O tokenizer e o modelo são carregados em meia
-# precisão, e o modelo é alocado automaticamente no dispositivo adequado via
-# ``device_map="auto"``.
-tokenizer = AutoTokenizer.from_pretrained(MODEL_NAME, use_fast=True)
-model = AutoModelForCausalLM.from_pretrained(
-    MODEL_NAME,
-    dtype=torch.float16,
-    device_map="auto"
-)
+tokenizer: Optional[AutoTokenizer] = None
+model: Optional[AutoModelForCausalLM] = None
+mlx_tokenizer = None
+mlx_model = None
+MLX_MODEL_NAME = "mlx-community/DeepSeek-R1-Distill-Qwen-7B-4bit"
+
+
+def get_preferred_device() -> torch.device:
+    """Seleciona o melhor dispositivo disponível para geração local."""
+    if torch.backends.mps.is_available():
+        return torch.device("mps")
+    if torch.cuda.is_available():
+        return torch.device("cuda")
+    return torch.device("cpu")
+
+
+def get_model_device(model_obj: AutoModelForCausalLM) -> torch.device:
+    """Obtém o dispositivo onde o modelo está alocado."""
+    try:
+        return next(model_obj.parameters()).device
+    except StopIteration:
+        return get_preferred_device()
 
 def load_model(model_name: str) -> tuple[AutoTokenizer, AutoModelForCausalLM]:
     """Carrega um modelo HuggingFace e seu tokenizer para geração.
@@ -75,24 +89,66 @@ def load_model(model_name: str) -> tuple[AutoTokenizer, AutoModelForCausalLM]:
 
     Observações
     -----
-    Esta função auxiliar carrega o modelo e o tokenizer em meia precisão e
-    mapeia automaticamente o modelo para os dispositivos disponíveis. Ela pode
-    ser usada por scripts de linha de comando para substituir o ``MODEL_NAME``
-    padrão sem modificar as variáveis globais do módulo.
+    Esta função auxiliar carrega o modelo em meia precisão quando há GPU
+    disponível. Em Macs Apple Silicon, usa explicitamente o backend MPS para
+    evitar cair em CPU durante a geração.
     """
-    # Se o modelo solicitado for o padrão do módulo e tokenizer/modelo já
-    # estiverem carregados, reutiliza os objetos existentes. Isso evita carregar
-    # o mesmo checkpoint duas vezes (uma na importação e outra via load_model).
     global MODEL_NAME, tokenizer, model
     if model_name == MODEL_NAME and tokenizer is not None and model is not None:
         return tokenizer, model
-    # Caso contrário, carrega o modelo especificado do zero.
+
+    device = get_preferred_device()
     tk = AutoTokenizer.from_pretrained(model_name, use_fast=True)
-    mdl = AutoModelForCausalLM.from_pretrained(
-        model_name,
-        dtype=torch.float16,
-        device_map="auto",
-    )
+
+    if device.type == "mps":
+        mdl = AutoModelForCausalLM.from_pretrained(
+            model_name,
+            dtype=torch.float16,
+            low_cpu_mem_usage=True,
+            attn_implementation="eager",
+        ).to(device)
+    elif device.type == "cuda":
+        mdl = AutoModelForCausalLM.from_pretrained(
+            model_name,
+            dtype=torch.float16,
+            device_map="auto",
+        )
+    else:
+        mdl = AutoModelForCausalLM.from_pretrained(
+            model_name,
+            dtype=torch.float32,
+            low_cpu_mem_usage=True,
+        )
+
+    mdl.eval()
+    mdl.generation_config.do_sample = False
+    mdl.generation_config.temperature = None
+    mdl.generation_config.top_p = None
+    MODEL_NAME = model_name
+    tokenizer = tk
+    model = mdl
+    print(f"Modelo alocado em: {get_model_device(mdl)}")
+    return tk, mdl
+
+
+def load_mlx_model(model_name: str = MLX_MODEL_NAME):
+    """Carrega um modelo MLX otimizado para Apple Silicon."""
+    try:
+        from mlx_lm import load
+    except ImportError as exc:
+        raise ImportError(
+            "Backend MLX indisponível. Instale com: pip install mlx-lm"
+        ) from exc
+
+    global MLX_MODEL_NAME, mlx_model, mlx_tokenizer
+    if model_name == MLX_MODEL_NAME and mlx_model is not None and mlx_tokenizer is not None:
+        return mlx_tokenizer, mlx_model
+
+    mdl, tk = load(model_name)
+    MLX_MODEL_NAME = model_name
+    mlx_model = mdl
+    mlx_tokenizer = tk
+    print("Modelo alocado via MLX/Apple Silicon.")
     return tk, mdl
 
 
@@ -117,8 +173,12 @@ def build_prompt(question: str, chunks: List[str]) -> str:
     """
     context = "\n\n".join(f"[CHUNK {i}] {c}" for i, c in enumerate(chunks, 1))
     return (
-        "Você é um assistente técnico automotivo. Use SOMENTE o contexto fornecido para responder à pergunta.\n\n"
-        "Se o contexto não contiver a resposta, diga: \"O manual não fornece essa informação.\"\n\n"
+        "Você é um assistente técnico automotivo. Responda sempre em português do Brasil.\n"
+        "Use SOMENTE o contexto fornecido para responder à pergunta.\n\n"
+        "Se gerar uma cadeia de raciocínio, coloque a resposta final depois dela. "
+        "A resposta final deve ser direta, em 1 ou 2 frases, e não deve comentar sobre os chunks.\n\n"
+        "Se o contexto estiver vazio ou não contiver a resposta, responda exatamente: "
+        "\"O manual não fornece essa informação.\"\n\n"
         f"<context>\n{context}\n</context>\n\n"
         f"Pergunta: {question}\nResposta:"
     )
@@ -225,6 +285,39 @@ def get_tokenizer_info(tokenizer, model_name: str) -> dict:
     }
 
 
+def format_chat_prompt(tokenizer_obj, prompt: str) -> str:
+    """Aplica o template de chat quando o tokenizer fornece essa configuração."""
+    if hasattr(tokenizer_obj, "apply_chat_template") and getattr(tokenizer_obj, "chat_template", None) is not None:
+        messages = [{"role": "user", "content": prompt}]
+        return tokenizer_obj.apply_chat_template(
+            messages,
+            tokenize=False,
+            add_generation_prompt=True,
+        )
+    return prompt
+
+
+def split_reasoning_and_answer(raw_output: str) -> tuple[str, str, Optional[str], Optional[str], Optional[str]]:
+    """Separa raciocínio e resposta em saídas textuais com tags."""
+    reasoning_tag_name, found_start_tag, found_end_tag = detect_reasoning_tag_from_text(raw_output)
+
+    if found_start_tag and found_end_tag:
+        start_idx = raw_output.lower().find(found_start_tag.lower())
+        end_idx = raw_output.lower().find(found_end_tag.lower(), start_idx + len(found_start_tag))
+        if start_idx != -1 and end_idx != -1:
+            reasoning_text = raw_output[start_idx + len(found_start_tag):end_idx]
+            answer_text = raw_output[end_idx + len(found_end_tag):]
+            return reasoning_text.strip(), answer_text.strip(), reasoning_tag_name, found_start_tag, found_end_tag
+
+    closing_tags = ["</think>", "</analysis>", "</thought>"]
+    for tag in closing_tags:
+        pos = raw_output.lower().find(tag)
+        if pos != -1:
+            return raw_output[:pos].strip(), raw_output[pos + len(tag):].strip(), None, None, tag
+
+    return "", raw_output.strip(), reasoning_tag_name, found_start_tag, found_end_tag
+
+
 # -----------------------------------------------------------------------------
 # Geração e extração de raciocínio
 # -----------------------------------------------------------------------------
@@ -232,7 +325,8 @@ def generation_answer(
     prompt: str,
     *,
     model: Optional[AutoModelForCausalLM] = None,
-    tokenizer: Optional[AutoTokenizer] = None
+    tokenizer: Optional[AutoTokenizer] = None,
+    max_new_tokens: int = 1200,
 ) -> Dict[str, object]:
     """Gera uma resposta com o modelo e separa raciocínio de resposta final.
 
@@ -256,25 +350,26 @@ def generation_answer(
     # de geração por chamada.
     mdl = model if model is not None else globals()["model"]
     tk = tokenizer if tokenizer is not None else globals()["tokenizer"]
+    if mdl is None or tk is None:
+        tk, mdl = load_model(MODEL_NAME)
 
     messages = [{"role": "user", "content": prompt}]
-    formatted_prompt = tk.apply_chat_template(
-        messages,
-        tokenize=False,
-        add_generation_prompt=True
-    )
+    formatted_prompt = format_chat_prompt(tk, prompt)
     # Tokeniza a entrada.
     inputs = tk(formatted_prompt, return_tensors="pt", truncation=True)
     # Move os tensores para o mesmo dispositivo do modelo usado na geração.
-    inputs = {k: v.to(mdl.device) for k, v in inputs.items()}
+    device = get_model_device(mdl)
+    inputs = {k: v.to(device) for k, v in inputs.items()}
     # Executa a geração.
-    output = mdl.generate(
-        **inputs,
-        do_sample=False,
-        max_new_tokens=1200,
-        eos_token_id=tk.eos_token_id,
-        pad_token_id=tk.pad_token_id if tk.pad_token_id is not None else tk.eos_token_id,
-    )
+    with torch.inference_mode():
+        output = mdl.generate(
+            **inputs,
+            do_sample=False,
+            max_new_tokens=max_new_tokens,
+            eos_token_id=tk.eos_token_id,
+            pad_token_id=tk.pad_token_id if tk.pad_token_id is not None else tk.eos_token_id,
+            use_cache=True,
+        )
     prompt_len = inputs["input_ids"].shape[1]
     generated_ids = output[0][prompt_len:]
     generated_ids_list = generated_ids.tolist()
@@ -369,6 +464,77 @@ def generation_answer(
         "reasoning_end_tag_start_idx": found_end_tag_start_idx,
         "reasoning_end_tag_end_idx": found_end_tag_end_idx,
         "tokenizer_info": get_tokenizer_info(tk, mdl.name_or_path if hasattr(mdl, "name_or_path") else MODEL_NAME),
+    }
+
+
+def generation_answer_mlx(
+    prompt: str,
+    *,
+    model=None,
+    tokenizer=None,
+    max_new_tokens: int = 250,
+) -> Dict[str, object]:
+    """Gera uma resposta usando MLX, mantendo o formato do backend Transformers."""
+    try:
+        from mlx_lm import generate
+    except ImportError as exc:
+        raise ImportError(
+            "Backend MLX indisponível. Instale com: pip install mlx-lm"
+        ) from exc
+
+    mdl = model if model is not None else globals()["mlx_model"]
+    tk = tokenizer if tokenizer is not None else globals()["mlx_tokenizer"]
+    if mdl is None or tk is None:
+        tk, mdl = load_mlx_model(MLX_MODEL_NAME)
+
+    formatted_prompt = format_chat_prompt(tk, prompt)
+    raw_output = generate(
+        mdl,
+        tk,
+        prompt=formatted_prompt,
+        max_tokens=max_new_tokens,
+        verbose=False,
+    ).strip()
+    clean_raw_output = clean_generated_text(raw_output)
+    reasoning_text, answer_text, reasoning_tag_name, found_start_tag, found_end_tag = split_reasoning_and_answer(raw_output)
+
+    input_ids = tk.encode(formatted_prompt)
+    generated_ids = tk.encode(raw_output)
+    reasoning_ids = tk.encode(reasoning_text) if reasoning_text else []
+    answer_ids = tk.encode(answer_text) if answer_text else []
+
+    return {
+        "raw_output": raw_output,
+        "clean_raw_output": clean_raw_output,
+        "formatted_prompt": formatted_prompt,
+        "input_token_count": len(input_ids),
+        "output_token_count": len(generated_ids),
+        "input_ids": input_ids,
+        "generated_ids": generated_ids,
+        "reasoning_text": clean_generated_text(reasoning_text),
+        "reasoning_ids": reasoning_ids,
+        "reasoning_tokens": [],
+        "answer_text": clean_generated_text(answer_text),
+        "answer_ids": answer_ids,
+        "answer_tokens": [],
+        "reasoning_tag_name": reasoning_tag_name,
+        "reasoning_start_tag": found_start_tag,
+        "reasoning_start_tag_ids": tk.encode(found_start_tag) if found_start_tag else [],
+        "reasoning_start_tag_tokens": [],
+        "reasoning_start_tag_start_idx": -1,
+        "reasoning_start_tag_end_idx": -1,
+        "reasoning_end_tag": found_end_tag,
+        "reasoning_end_tag_ids": tk.encode(found_end_tag) if found_end_tag else [],
+        "reasoning_end_tag_tokens": [],
+        "reasoning_end_tag_start_idx": -1,
+        "reasoning_end_tag_end_idx": -1,
+        "tokenizer_info": {
+            "tokenizer_name": getattr(tk, "name_or_path", MLX_MODEL_NAME),
+            "tokenizer_class": tk.__class__.__name__,
+            "model_name_reference": MLX_MODEL_NAME,
+            "backend": "mlx",
+            "chat_template_exists": hasattr(tk, "chat_template") and getattr(tk, "chat_template", None) is not None,
+        },
     }
 
 
@@ -533,6 +699,8 @@ __all__ = [
     "build_prompt",
     "detect_reasoning_tag_from_text",
     "generation_answer",
+    "generation_answer_mlx",
+    "load_mlx_model",
     "embed_text",
     "retrieve_chunks",
     "build_result_record",

@@ -1,0 +1,625 @@
+{
+  "execution": {
+    "backend": "mlx",
+    "model": "mlx-community/DeepSeek-R1-Distill-Qwen-7B-4bit",
+    "device_allocation": "MLX/Apple Silicon",
+    "input": "perguntas_respostas_Kwid_Nov24_50.json",
+    "output": "rag_cli_output_mlx_DeepSeek-R1-Distill-Qwen-7B-4bit_Kwid_Nov24_50.json",
+    "brand": "Renault",
+    "car_model": "Kwid",
+    "year": "Nov24",
+    "top_k": 8,
+    "max_new_tokens": 1200,
+    "status": "completed"
+  },
+  "logs": [
+    {
+      "index": 1,
+      "total_questions": 50,
+      "question": "Como destravar as portas do Renault Kwid pelo controle remoto?",
+      "retrieved_chunks": 8,
+      "max_new_tokens": 1200,
+      "timings_seconds": {
+        "original": 19.5,
+        "shuffled": 34.4,
+        "question_total": 54.3
+      }
+    },
+    {
+      "index": 2,
+      "total_questions": 50,
+      "question": "Como travar as portas do Kwid pelo controle remoto?",
+      "retrieved_chunks": 8,
+      "max_new_tokens": 1200,
+      "timings_seconds": {
+        "original": 18.9,
+        "shuffled": 26.1,
+        "question_total": 45.2
+      }
+    },
+    {
+      "index": 3,
+      "total_questions": 50,
+      "question": "O que acontece se eu destravar o carro e não abrir nenhuma porta?",
+      "retrieved_chunks": 8,
+      "max_new_tokens": 1200,
+      "timings_seconds": {
+        "original": 26.1,
+        "shuffled": 24.1,
+        "question_total": 50.5
+      }
+    },
+    {
+      "index": 4,
+      "total_questions": 50,
+      "question": "Como abrir o porta-malas pelo controle remoto?",
+      "retrieved_chunks": 8,
+      "max_new_tokens": 1200,
+      "timings_seconds": {
+        "original": 22.1,
+        "shuffled": 19.5,
+        "question_total": 41.8
+      }
+    },
+    {
+      "index": 5,
+      "total_questions": 50,
+      "question": "Por que o controle remoto pode falhar perto de alguns objetos?",
+      "retrieved_chunks": 8,
+      "max_new_tokens": 1200,
+      "timings_seconds": {
+        "original": 18.4,
+        "shuffled": 20.6,
+        "question_total": 39.2
+      }
+    },
+    {
+      "index": 6,
+      "total_questions": 50,
+      "question": "Posso deixar o controle remoto exposto ao calor, frio ou umidade?",
+      "retrieved_chunks": 8,
+      "max_new_tokens": 1200,
+      "timings_seconds": {
+        "original": 22.6,
+        "shuffled": 22.2,
+        "question_total": 45.0
+      }
+    },
+    {
+      "index": 7,
+      "total_questions": 50,
+      "question": "O que fazer se eu perder a chave ou precisar de outra chave?",
+      "retrieved_chunks": 8,
+      "max_new_tokens": 1200,
+      "timings_seconds": {
+        "original": 26.0,
+        "shuffled": 26.4,
+        "question_total": 52.7
+      }
+    },
+    {
+      "index": 8,
+      "total_questions": 50,
+      "question": "Quantas chaves ou controles remotos podem ser usados no veículo?",
+      "retrieved_chunks": 8,
+      "max_new_tokens": 1200,
+      "timings_seconds": {
+        "original": 15.3,
+        "shuffled": 15.0,
+        "question_total": 30.6
+      }
+    },
+    {
+      "index": 9,
+      "total_questions": 50,
+      "question": "Como travar ou destravar a porta manualmente pela fechadura?",
+      "retrieved_chunks": 8,
+      "max_new_tokens": 1200,
+      "timings_seconds": {
+        "original": 21.9,
+        "shuffled": 17.4,
+        "question_total": 39.5
+      }
+    },
+    {
+      "index": 10,
+      "total_questions": 50,
+      "question": "Como travar ou destravar as portas por dentro?",
+      "retrieved_chunks": 8,
+      "max_new_tokens": 1200,
+      "timings_seconds": {
+        "original": 21.4,
+        "shuffled": 22.2,
+        "question_total": 43.7
+      }
+    },
+    {
+      "index": 11,
+      "total_questions": 50,
+      "question": "Como travar as portas se o controle remoto não funcionar?",
+      "retrieved_chunks": 8,
+      "max_new_tokens": 1200,
+      "timings_seconds": {
+        "original": 18.3,
+        "shuffled": 18.6,
+        "question_total": 37.0
+      }
+    },
+    {
+      "index": 12,
+      "total_questions": 50,
+      "question": "Como ativar o travamento automático das portas em movimento?",
+      "retrieved_chunks": 8,
+      "max_new_tokens": 1200,
+      "timings_seconds": {
+        "original": 18.0,
+        "shuffled": 21.5,
+        "question_total": 39.6
+      }
+    },
+    {
+      "index": 13,
+      "total_questions": 50,
+      "question": "Quando o travamento automático das portas entra em funcionamento?",
+      "retrieved_chunks": 8,
+      "max_new_tokens": 1200,
+      "timings_seconds": {
+        "original": 22.5,
+        "shuffled": 18.1,
+        "question_total": 40.7
+      }
+    },
+    {
+      "index": 14,
+      "total_questions": 50,
+      "question": "Como desativar o travamento automático das portas?",
+      "retrieved_chunks": 8,
+      "max_new_tokens": 1200,
+      "timings_seconds": {
+        "original": 20.4,
+        "shuffled": 18.5,
+        "question_total": 39.0
+      }
+    },
+    {
+      "index": 15,
+      "total_questions": 50,
+      "question": "O que verificar se o travamento automático não funcionar?",
+      "retrieved_chunks": 8,
+      "max_new_tokens": 1200,
+      "timings_seconds": {
+        "original": 27.6,
+        "shuffled": 20.2,
+        "question_total": 48.2
+      }
+    },
+    {
+      "index": 16,
+      "total_questions": 50,
+      "question": "Como abrir as portas por fora?",
+      "retrieved_chunks": 8,
+      "max_new_tokens": 1200,
+      "timings_seconds": {
+        "original": 19.0,
+        "shuffled": 18.6,
+        "question_total": 38.0
+      }
+    },
+    {
+      "index": 17,
+      "total_questions": 50,
+      "question": "Como funciona a trava de segurança para crianças?",
+      "retrieved_chunks": 8,
+      "max_new_tokens": 1200,
+      "timings_seconds": {
+        "original": 23.5,
+        "shuffled": 29.9,
+        "question_total": 53.5
+      }
+    },
+    {
+      "index": 18,
+      "total_questions": 50,
+      "question": "Por que não devo deixar crianças, adultos incapazes ou animais dentro do carro?",
+      "retrieved_chunks": 8,
+      "max_new_tokens": 1200,
+      "timings_seconds": {
+        "original": 18.7,
+        "shuffled": 36.2,
+        "question_total": 55.2
+      }
+    },
+    {
+      "index": 19,
+      "total_questions": 50,
+      "question": "Como regular o banco dianteiro para frente ou para trás?",
+      "retrieved_chunks": 8,
+      "max_new_tokens": 1200,
+      "timings_seconds": {
+        "original": 20.4,
+        "shuffled": 26.3,
+        "question_total": 46.9
+      }
+    },
+    {
+      "index": 20,
+      "total_questions": 50,
+      "question": "Por que preciso verificar se o banco travou depois da regulagem?",
+      "retrieved_chunks": 8,
+      "max_new_tokens": 1200,
+      "timings_seconds": {
+        "original": 28.9,
+        "shuffled": 22.1,
+        "question_total": 51.3
+      }
+    },
+    {
+      "index": 21,
+      "total_questions": 50,
+      "question": "Como usar corretamente o cinto de segurança?",
+      "retrieved_chunks": 8,
+      "max_new_tokens": 1200,
+      "timings_seconds": {
+        "original": 35.8,
+        "shuffled": 25.7,
+        "question_total": 61.7
+      }
+    },
+    {
+      "index": 22,
+      "total_questions": 50,
+      "question": "Posso usar o mesmo cinto para duas pessoas?",
+      "retrieved_chunks": 8,
+      "max_new_tokens": 1200,
+      "timings_seconds": {
+        "original": 13.4,
+        "shuffled": 21.9,
+        "question_total": 35.5
+      }
+    },
+    {
+      "index": 23,
+      "total_questions": 50,
+      "question": "Gestantes devem usar cinto de segurança?",
+      "retrieved_chunks": 8,
+      "max_new_tokens": 1200,
+      "timings_seconds": {
+        "original": 19.4,
+        "shuffled": 17.8,
+        "question_total": 37.3
+      }
+    },
+    {
+      "index": 24,
+      "total_questions": 50,
+      "question": "O que a luz de lembrete do cinto dianteiro indica?",
+      "retrieved_chunks": 8,
+      "max_new_tokens": 1200,
+      "timings_seconds": {
+        "original": 23.1,
+        "shuffled": 23.5,
+        "question_total": 46.7
+      }
+    },
+    {
+      "index": 25,
+      "total_questions": 50,
+      "question": "Um objeto no banco do passageiro pode acionar o aviso do cinto?",
+      "retrieved_chunks": 8,
+      "max_new_tokens": 1200,
+      "timings_seconds": {
+        "original": 21.4,
+        "shuffled": 25.7,
+        "question_total": 47.3
+      }
+    },
+    {
+      "index": 26,
+      "total_questions": 50,
+      "question": "Como ajustar a altura do cinto dianteiro?",
+      "retrieved_chunks": 8,
+      "max_new_tokens": 1200,
+      "timings_seconds": {
+        "original": 22.3,
+        "shuffled": 34.6,
+        "question_total": 57.2
+      }
+    },
+    {
+      "index": 27,
+      "total_questions": 50,
+      "question": "Como usar o cinto traseiro central?",
+      "retrieved_chunks": 8,
+      "max_new_tokens": 1200,
+      "timings_seconds": {
+        "original": 22.5,
+        "shuffled": 21.2,
+        "question_total": 43.9
+      }
+    },
+    {
+      "index": 28,
+      "total_questions": 50,
+      "question": "Posso encaixar qualquer lingueta em qualquer caixa de cinto traseiro?",
+      "retrieved_chunks": 8,
+      "max_new_tokens": 1200,
+      "timings_seconds": {
+        "original": 26.0,
+        "shuffled": 26.3,
+        "question_total": 52.5
+      }
+    },
+    {
+      "index": 29,
+      "total_questions": 50,
+      "question": "Quando o aviso dos cintos traseiros aparece?",
+      "retrieved_chunks": 8,
+      "max_new_tokens": 1200,
+      "timings_seconds": {
+        "original": 18.2,
+        "shuffled": 17.8,
+        "question_total": 36.2
+      }
+    },
+    {
+      "index": 30,
+      "total_questions": 50,
+      "question": "Posso passar a faixa do cinto por baixo do braço?",
+      "retrieved_chunks": 8,
+      "max_new_tokens": 1200,
+      "timings_seconds": {
+        "original": 17.4,
+        "shuffled": 19.2,
+        "question_total": 36.9
+      }
+    },
+    {
+      "index": 31,
+      "total_questions": 50,
+      "question": "Quando devo substituir os cintos de segurança?",
+      "retrieved_chunks": 8,
+      "max_new_tokens": 1200,
+      "timings_seconds": {
+        "original": 22.5,
+        "shuffled": 22.5,
+        "question_total": 45.3
+      }
+    },
+    {
+      "index": 32,
+      "total_questions": 50,
+      "question": "O que são os limitadores de esforço dos cintos?",
+      "retrieved_chunks": 8,
+      "max_new_tokens": 1200,
+      "timings_seconds": {
+        "original": 23.0,
+        "shuffled": 18.1,
+        "question_total": 41.4
+      }
+    },
+    {
+      "index": 33,
+      "total_questions": 50,
+      "question": "Como sei se o veículo tem airbag frontal?",
+      "retrieved_chunks": 8,
+      "max_new_tokens": 1200,
+      "timings_seconds": {
+        "original": 19.9,
+        "shuffled": 19.6,
+        "question_total": 39.8
+      }
+    },
+    {
+      "index": 34,
+      "total_questions": 50,
+      "question": "Como funciona o airbag frontal?",
+      "retrieved_chunks": 8,
+      "max_new_tokens": 1200,
+      "timings_seconds": {
+        "original": 32.5,
+        "shuffled": 25.8,
+        "question_total": 58.7
+      }
+    },
+    {
+      "index": 35,
+      "total_questions": 50,
+      "question": "É normal o airbag fazer ruído e liberar fumaça ao disparar?",
+      "retrieved_chunks": 8,
+      "max_new_tokens": 1200,
+      "timings_seconds": {
+        "original": 20.4,
+        "shuffled": 17.9,
+        "question_total": 38.6
+      }
+    },
+    {
+      "index": 36,
+      "total_questions": 50,
+      "question": "O que significa a luz do airbag acesa com o motor funcionando?",
+      "retrieved_chunks": 8,
+      "max_new_tokens": 1200,
+      "timings_seconds": {
+        "original": 17.3,
+        "shuffled": 19.4,
+        "question_total": 37.4
+      }
+    },
+    {
+      "index": 37,
+      "total_questions": 50,
+      "question": "Posso colocar cadeirinha infantil no banco dianteiro?",
+      "retrieved_chunks": 8,
+      "max_new_tokens": 1200,
+      "timings_seconds": {
+        "original": 23.0,
+        "shuffled": 18.8,
+        "question_total": 42.1
+      }
+    },
+    {
+      "index": 38,
+      "total_questions": 50,
+      "question": "Posso fixar objetos sobre a tampa do airbag no volante?",
+      "retrieved_chunks": 8,
+      "max_new_tokens": 1200,
+      "timings_seconds": {
+        "original": 23.5,
+        "shuffled": 23.0,
+        "question_total": 46.7
+      }
+    },
+    {
+      "index": 39,
+      "total_questions": 50,
+      "question": "O que indica a luz de portas abertas?",
+      "retrieved_chunks": 8,
+      "max_new_tokens": 1200,
+      "timings_seconds": {
+        "original": 20.2,
+        "shuffled": 22.4,
+        "question_total": 43.0
+      }
+    },
+    {
+      "index": 40,
+      "total_questions": 50,
+      "question": "O que fazer quando a luz de nível mínimo de combustível acende?",
+      "retrieved_chunks": 8,
+      "max_new_tokens": 1200,
+      "timings_seconds": {
+        "original": 18.1,
+        "shuffled": 20.4,
+        "question_total": 38.8
+      }
+    },
+    {
+      "index": 41,
+      "total_questions": 50,
+      "question": "O que fazer se a luz de temperatura do motor acender em movimento?",
+      "retrieved_chunks": 8,
+      "max_new_tokens": 1200,
+      "timings_seconds": {
+        "original": 29.3,
+        "shuffled": 28.5,
+        "question_total": 58.1
+      }
+    },
+    {
+      "index": 42,
+      "total_questions": 50,
+      "question": "O que significa a luz da bateria acesa em movimento?",
+      "retrieved_chunks": 8,
+      "max_new_tokens": 1200,
+      "timings_seconds": {
+        "original": 17.5,
+        "shuffled": 30.3,
+        "question_total": 47.9
+      }
+    },
+    {
+      "index": 43,
+      "total_questions": 50,
+      "question": "O que significa a luz da direção assistida acesa durante a condução?",
+      "retrieved_chunks": 8,
+      "max_new_tokens": 1200,
+      "timings_seconds": {
+        "original": 18.7,
+        "shuffled": 27.2,
+        "question_total": 46.2
+      }
+    },
+    {
+      "index": 44,
+      "total_questions": 50,
+      "question": "O que devo fazer se a luz de pressão do óleo acender enquanto dirijo?",
+      "retrieved_chunks": 8,
+      "max_new_tokens": 1200,
+      "timings_seconds": {
+        "original": 18.1,
+        "shuffled": 21.9,
+        "question_total": 40.3
+      }
+    },
+    {
+      "index": 45,
+      "total_questions": 50,
+      "question": "O que significa a luz de controle dos gases do escapamento acesa continuamente?",
+      "retrieved_chunks": 8,
+      "max_new_tokens": 1200,
+      "timings_seconds": {
+        "original": 24.6,
+        "shuffled": 23.5,
+        "question_total": 48.4
+      }
+    },
+    {
+      "index": 46,
+      "total_questions": 50,
+      "question": "O que fazer se a luz de controle dos gases do escapamento piscar?",
+      "retrieved_chunks": 8,
+      "max_new_tokens": 1200,
+      "timings_seconds": {
+        "original": 32.0,
+        "shuffled": 24.8,
+        "question_total": 57.0
+      }
+    },
+    {
+      "index": 47,
+      "total_questions": 50,
+      "question": "O que significa a luz do freio de estacionamento acesa?",
+      "retrieved_chunks": 8,
+      "max_new_tokens": 1200,
+      "timings_seconds": {
+        "original": 14.0,
+        "shuffled": 19.6,
+        "question_total": 33.9
+      }
+    },
+    {
+      "index": 48,
+      "total_questions": 50,
+      "question": "O que devo fazer se a luz do freio acender ao frear e soar um sinal?",
+      "retrieved_chunks": 8,
+      "max_new_tokens": 1200,
+      "timings_seconds": {
+        "original": 23.7,
+        "shuffled": 25.1,
+        "question_total": 49.1
+      }
+    },
+    {
+      "index": 49,
+      "total_questions": 50,
+      "question": "Para que serve a luz de pré-aquecimento na versão flex?",
+      "retrieved_chunks": 8,
+      "max_new_tokens": 1200,
+      "timings_seconds": {
+        "original": 20.8,
+        "shuffled": 20.5,
+        "question_total": 41.5
+      }
+    },
+    {
+      "index": 50,
+      "total_questions": 50,
+      "question": "O motor dá partida se a luz de pré-aquecimento estiver acesa ou piscando?",
+      "retrieved_chunks": 8,
+      "max_new_tokens": 1200,
+      "timings_seconds": {
+        "original": 15.4,
+        "shuffled": 15.2,
+        "question_total": 30.9
+      }
+    }
+  ],
+  "summary": {
+    "num_questions": 50,
+    "retrieved_chunks_per_question": 8,
+    "avg_original_seconds": 21.67,
+    "avg_shuffled_seconds": 22.72,
+    "avg_question_total_seconds": 44.64,
+    "total_runtime_seconds_sum": 2232.2
+  }
+}

@@ -1,0 +1,102 @@
+[
+  {
+    "pergunta": "Como destravar as portas do Renault Kwid pelo controle remoto?",
+    "resposta": "Pressione o botão de destravamento do controle remoto. O destravamento é confirmado por uma intermitência das luzes de advertência e dos pisca-alerta laterais."
+  },
+  {
+    "pergunta": "Como travar as portas do Kwid pelo controle remoto?",
+    "resposta": "Pressione o botão de travamento do controle remoto. O travamento é confirmado por duas intermitências das luzes de advertência e dos pisca-alerta laterais."
+  },
+  {
+    "pergunta": "O que acontece se eu destravar o carro e não abrir nenhuma porta?",
+    "resposta": "Se nenhuma porta for aberta em aproximadamente 2 minutos após o destravamento pelo controle remoto, as portas voltam a travar automaticamente."
+  },
+  {
+    "pergunta": "Como funciona a trava de segurança para crianças?",
+    "resposta": "Ela impede a abertura das portas traseiras pelo lado de dentro. Desloque a alavanca em cada porta traseira e confira pelo lado interno se a porta ficou travada."
+  },
+  {
+    "pergunta": "Como usar corretamente o cinto de segurança?",
+    "resposta": "Puxe o cinto lentamente, encaixe a lingueta na caixa correta e ajuste as faixas ao corpo. O cinto não deve ficar torcido nem folgado."
+  },
+  {
+    "pergunta": "O que a luz de lembrete do cinto dianteiro indica?",
+    "resposta": "Se o motorista ou passageiro dianteiro estiver sem cinto e o veículo atingir cerca de 20 km/h, a luz acende e um bipe soa por aproximadamente 2 minutos."
+  },
+  {
+    "pergunta": "O que significa a luz do airbag acesa com o motor funcionando?",
+    "resposta": "Se a luz do airbag não acender ao ligar a ignição, piscar ou permanecer acesa com o motor funcionando, há falha no sistema. Consulte rapidamente uma Oficina Autorizada."
+  },
+  {
+    "pergunta": "O que fazer quando a luz de nível mínimo de combustível acende?",
+    "resposta": "Reabasteça assim que possível. O manual informa que restam cerca de 50 km de autonomia a partir da primeira vez que essa luz se acende."
+  },
+  {
+    "pergunta": "O que fazer se a luz de temperatura do motor acender em movimento?",
+    "resposta": "Pare e deixe o motor funcionando em marcha lenta por um ou dois minutos para a temperatura baixar. Se não baixar, desligue o motor, deixe-o esfriar e verifique o nível do líquido de refrigeração."
+  },
+  {
+    "pergunta": "O que devo fazer se a luz de pressão do óleo acender enquanto dirijo?",
+    "resposta": "Pare imediatamente e desligue o motor. Verifique o nível de óleo; se o nível estiver normal, a causa é outra e uma Oficina Autorizada deve ser consultada."
+  },
+  {
+    "pergunta": "O que significa a luz do ABS acesa em movimento?",
+    "resposta": "Ela sinaliza falha no sistema antibloqueio das rodas. A frenagem comum continua assegurada, mas sem a função ABS; consulte uma Oficina Autorizada assim que possível."
+  },
+  {
+    "pergunta": "O que significa a luz vermelha de parada obrigatória?",
+    "resposta": "Se essa luz acender com sinal sonoro, pare imediatamente conforme as condições de circulação, desligue o motor e não tente dar a partida novamente. Consulte uma Oficina Autorizada."
+  },
+  {
+    "pergunta": "Qual é a capacidade útil do tanque de combustível do Kwid?",
+    "resposta": "A capacidade útil do tanque é de aproximadamente 38 litros."
+  },
+  {
+    "pergunta": "Que combustível usar nas versões Flex?",
+    "resposta": "As versões Flex podem usar gasolina e etanol em qualquer proporção, incluindo gasolina tipo C, gasolina premium ou álcool etílico hidratado."
+  },
+  {
+    "pergunta": "O que fazer se sentir odor persistente de combustível?",
+    "resposta": "Pare o veículo conforme as condições de circulação, desligue a ignição, acione o pisca-alerta, peça aos ocupantes que saiam e chame uma Oficina Autorizada."
+  },
+  {
+    "pergunta": "Como dar partida no motor?",
+    "resposta": "Acione o motor de partida sem acelerar e solte a chave assim que o motor funcionar."
+  },
+  {
+    "pergunta": "É normal a partida com etanol demorar mais?",
+    "resposta": "Sim. Ao usar etanol, o manual orienta manter a chave acionada por mais tempo na partida, sendo normal ouvir ruídos ao dar partida."
+  },
+  {
+    "pergunta": "Para que serve a função Stop & Start?",
+    "resposta": "Ela reduz consumo e emissões desligando temporariamente o motor em paradas, como congestionamentos ou semáforos, quando as condições do sistema são atendidas."
+  },
+  {
+    "pergunta": "Quando o Stop & Start pode não ficar disponível?",
+    "resposta": "Ele pode ficar indisponível se a marcha à ré estiver engatada, o capô não estiver travado, a temperatura externa for muito baixa ou alta, a bateria estiver fraca ou o motor ainda estiver frio."
+  },
+  {
+    "pergunta": "Como devo frear em uma emergência com ABS?",
+    "resposta": "Aplique pressão forte e contínua no pedal do freio. Não é necessário bombear o pedal; o ABS modula o esforço no sistema de freios."
+  },
+  {
+    "pergunta": "Para que serve o auxílio de partida em subida?",
+    "resposta": "O HSA ajuda a arrancar em subidas segurando o veículo por cerca de 2 segundos quando o motorista tira o pé do freio para acelerar."
+  },
+  {
+    "pergunta": "A câmera de marcha à ré substitui a atenção do motorista?",
+    "resposta": "Não. Ela é uma ajuda complementar; o motorista deve continuar atento a crianças, animais, carrinhos, bicicletas e obstáculos pequenos ou finos durante a manobra."
+  },
+  {
+    "pergunta": "Quando devo reinicializar o sistema de pressão dos pneus?",
+    "resposta": "Após encher ou ajustar a pressão, trocar uma roda, usar o kit de enchimento, fazer rodízio ou alterar a pressão de referência conforme carga e uso do veículo."
+  },
+  {
+    "pergunta": "Como calibrar os pneus corretamente?",
+    "resposta": "Verifique as pressões a frio conforme a etiqueta do veículo. Se medir com pneus quentes, acrescente de 0,2 a 0,3 bar às pressões recomendadas e nunca esvazie pneu quente."
+  },
+  {
+    "pergunta": "O que fazer antes de trocar uma roda?",
+    "resposta": "Acione o pisca-alerta, estacione em local afastado, plano, firme e não escorregadio, puxe o freio de estacionamento, engrene 1ª ou ré e peça aos ocupantes que saiam."
+  }
+]

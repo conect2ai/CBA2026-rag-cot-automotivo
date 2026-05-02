@@ -1,0 +1,642 @@
+[
+  {
+    "pergunta": "Como destravar as portas do Renault Kwid pelo controle remoto?",
+    "resposta": "Pressione o botão de destravamento do controle remoto. O destravamento é confirmado por uma intermitência das luzes de advertência e dos pisca-alerta laterais."
+  },
+  {
+    "pergunta": "Como travar as portas do Kwid pelo controle remoto?",
+    "resposta": "Pressione o botão de travamento do controle remoto. O travamento é confirmado por duas intermitências das luzes de advertência e dos pisca-alerta laterais."
+  },
+  {
+    "pergunta": "O que acontece se eu destravar o carro e não abrir nenhuma porta?",
+    "resposta": "Se nenhuma porta for aberta em aproximadamente 2 minutos após o destravamento pelo controle remoto, as portas voltam a travar automaticamente."
+  },
+  {
+    "pergunta": "Como abrir o porta-malas pelo controle remoto?",
+    "resposta": "Nas versões equipadas, pressione o botão de abertura do porta-malas por aproximadamente 2 segundos."
+  },
+  {
+    "pergunta": "Por que o controle remoto pode falhar perto de alguns objetos?",
+    "resposta": "Objetos metálicos, telefone celular ou áreas com campos eletromagnéticos intensos podem causar interferência e dificultar o funcionamento do controle remoto."
+  },
+  {
+    "pergunta": "Posso deixar o controle remoto exposto ao calor, frio ou umidade?",
+    "resposta": "Não. O manual recomenda não aproximar o controle remoto de fontes de calor ou frio e protegê-lo da umidade."
+  },
+  {
+    "pergunta": "O que fazer se eu perder a chave ou precisar de outra chave?",
+    "resposta": "Procure exclusivamente uma Oficina Autorizada. Para substituir ou adicionar chave/controle, é necessário levar o veículo e todas as chaves ou controles remotos para reinicialização do conjunto."
+  },
+  {
+    "pergunta": "Quantas chaves ou controles remotos podem ser usados no veículo?",
+    "resposta": "O manual informa que é possível utilizar até quatro chaves ou controles remotos por veículo."
+  },
+  {
+    "pergunta": "Como travar ou destravar a porta manualmente pela fechadura?",
+    "resposta": "Use a chave na fechadura da porta do motorista ou do passageiro. Gire no sentido horário para travar e no sentido anti-horário para destravar."
+  },
+  {
+    "pergunta": "Como travar ou destravar as portas por dentro?",
+    "resposta": "Abaixe o pino interno para travar e levante-o para destravar. Em veículos com comando elétrico, pressione o interruptor interno para travar ou destravar as cinco portas."
+  },
+  {
+    "pergunta": "Como travar as portas se o controle remoto não funcionar?",
+    "resposta": "Com o motor desligado e uma porta aberta, pressione o interruptor interno de travamento por mais de 5 segundos. Ao fechar a porta, todas as portas serão travadas."
+  },
+  {
+    "pergunta": "Como ativar o travamento automático das portas em movimento?",
+    "resposta": "Em algumas versões, com o motor funcionando, pressione o interruptor de travamento por cerca de 5 segundos até ouvir um sinal. A luz no interruptor acende quando as portas estão travadas."
+  },
+  {
+    "pergunta": "Quando o travamento automático das portas entra em funcionamento?",
+    "resposta": "Depois da partida, o sistema trava automaticamente as portas quando o veículo atinge aproximadamente 7 km/h."
+  },
+  {
+    "pergunta": "Como desativar o travamento automático das portas?",
+    "resposta": "Com a ignição ligada, pressione o interruptor de travamento por cerca de 5 segundos até ouvir um sinal."
+  },
+  {
+    "pergunta": "O que verificar se o travamento automático não funcionar?",
+    "resposta": "Verifique primeiro se todas as portas estão bem fechadas e se a função não foi desativada por engano. Se o problema persistir, procure uma Oficina Autorizada."
+  },
+  {
+    "pergunta": "Como abrir as portas por fora?",
+    "resposta": "Com as portas destravadas, coloque a mão sob a alça externa e puxe em sua direção."
+  },
+  {
+    "pergunta": "Como funciona a trava de segurança para crianças?",
+    "resposta": "Ela impede a abertura das portas traseiras pelo lado de dentro. Desloque a alavanca em cada porta traseira e confira pelo lado interno se a porta ficou travada."
+  },
+  {
+    "pergunta": "Por que não devo deixar crianças, adultos incapazes ou animais dentro do carro?",
+    "resposta": "Porque eles podem acionar motor ou equipamentos involuntariamente, e a temperatura interna da cabine pode subir rapidamente em dias quentes, com risco de morte ou ferimentos graves."
+  },
+  {
+    "pergunta": "Como regular o banco dianteiro para frente ou para trás?",
+    "resposta": "Levante a barra de destravamento, deslize o banco até a posição desejada, solte a barra e verifique se o banco ficou corretamente travado."
+  },
+  {
+    "pergunta": "Por que preciso verificar se o banco travou depois da regulagem?",
+    "resposta": "Porque um banco mal travado pode se mover durante a condução ou em uma frenagem, prejudicando o controle do veículo e a segurança dos ocupantes."
+  },
+  {
+    "pergunta": "Como usar corretamente o cinto de segurança?",
+    "resposta": "Puxe o cinto lentamente, encaixe a lingueta na caixa correta e ajuste as faixas ao corpo. O cinto não deve ficar torcido nem folgado."
+  },
+  {
+    "pergunta": "Posso usar o mesmo cinto para duas pessoas?",
+    "resposta": "Não. O manual orienta que um cinto de segurança nunca deve ser usado por mais de uma pessoa ao mesmo tempo, seja criança ou adulto."
+  },
+  {
+    "pergunta": "Gestantes devem usar cinto de segurança?",
+    "resposta": "Sim. A faixa abdominal deve ser colocada de modo que não faça grande pressão sobre a parte inferior da barriga, mas sem folga excessiva."
+  },
+  {
+    "pergunta": "O que a luz de lembrete do cinto dianteiro indica?",
+    "resposta": "Se o motorista ou passageiro dianteiro estiver sem cinto e o veículo atingir cerca de 20 km/h, a luz acende e um bipe soa por aproximadamente 2 minutos."
+  },
+  {
+    "pergunta": "Um objeto no banco do passageiro pode acionar o aviso do cinto?",
+    "resposta": "Sim. O manual observa que um objeto colocado no banco do passageiro pode, em certos casos, ativar a luz de aviso do cinto."
+  },
+  {
+    "pergunta": "Como ajustar a altura do cinto dianteiro?",
+    "resposta": "Puxe o botão de regulagem de altura e selecione a posição em que a faixa torácica fique corretamente posicionada. Depois, confira se o mecanismo travou."
+  },
+  {
+    "pergunta": "Como usar o cinto traseiro central?",
+    "resposta": "Puxe lentamente o cinto traseiro central e engate a lingueta na caixa correspondente, respeitando o cruzamento correto indicado pelo manual."
+  },
+  {
+    "pergunta": "Posso encaixar qualquer lingueta em qualquer caixa de cinto traseiro?",
+    "resposta": "Não. As fivelas dos cintos traseiros lateral direito e central têm caixas próprias e incompatíveis entre si para evitar engates incorretos."
+  },
+  {
+    "pergunta": "Quando o aviso dos cintos traseiros aparece?",
+    "resposta": "Conforme a versão, o painel mostra se os cintos traseiros estão afivelados ou desafivelados ao ligar a ignição. Se algum for desafivelado após o veículo atingir cerca de 20 km/h, o aviso acende."
+  },
+  {
+    "pergunta": "Posso passar a faixa do cinto por baixo do braço?",
+    "resposta": "Não. O manual orienta nunca passar a faixa por baixo do braço nem por trás das costas."
+  },
+  {
+    "pergunta": "Quando devo substituir os cintos de segurança?",
+    "resposta": "Após um acidente grave, os cintos devem ser substituídos. Também devem ser substituídos se estiverem deformados ou danificados."
+  },
+  {
+    "pergunta": "O que são os limitadores de esforço dos cintos?",
+    "resposta": "São dispositivos que, em colisões de certa violência, limitam a níveis suportáveis os efeitos do cinto de segurança sobre o corpo."
+  },
+  {
+    "pergunta": "Como sei se o veículo tem airbag frontal?",
+    "resposta": "A palavra airbag no volante e no painel de bordo indica que o veículo está equipado com airbags frontais para motorista e passageiro."
+  },
+  {
+    "pergunta": "Como funciona o airbag frontal?",
+    "resposta": "Com a ignição ligada, em um impacto frontal com desaceleração súbita detectada pelos sensores, os airbags inflam para absorver o impacto da cabeça e do peito e depois esvaziam rapidamente."
+  },
+  {
+    "pergunta": "É normal o airbag fazer ruído e liberar fumaça ao disparar?",
+    "resposta": "Sim. O sistema usa princípio pirotécnico; o disparo gera calor, ruído de detonação e libera fumaça, o que não significa necessariamente início de incêndio."
+  },
+  {
+    "pergunta": "O que significa a luz do airbag acesa com o motor funcionando?",
+    "resposta": "Se a luz do airbag não acender ao ligar a ignição, piscar ou permanecer acesa com o motor funcionando, há falha no sistema. Consulte rapidamente uma Oficina Autorizada."
+  },
+  {
+    "pergunta": "Posso colocar cadeirinha infantil no banco dianteiro?",
+    "resposta": "O manual não recomenda instalar sistema de retenção infantil no banco da frente, devido ao risco para a criança em caso de ativação do airbag."
+  },
+  {
+    "pergunta": "Posso fixar objetos sobre a tampa do airbag no volante?",
+    "resposta": "Não. O manual orienta nunca cobrir ou fixar objetos na almofada do volante, como crachá, logotipo, relógio ou suporte de telefone."
+  },
+  {
+    "pergunta": "O que indica a luz de portas abertas?",
+    "resposta": "Ela acende com a ignição ligada quando uma das portas ou o porta-malas está aberto ou mal fechado."
+  },
+  {
+    "pergunta": "O que fazer quando a luz de nível mínimo de combustível acende?",
+    "resposta": "Reabasteça assim que possível. O manual informa que restam cerca de 50 km de autonomia a partir da primeira vez que essa luz se acende."
+  },
+  {
+    "pergunta": "O que fazer se a luz de temperatura do motor acender em movimento?",
+    "resposta": "Pare e deixe o motor funcionando em marcha lenta por um ou dois minutos para a temperatura baixar. Se não baixar, desligue o motor, deixe-o esfriar e verifique o nível do líquido de refrigeração."
+  },
+  {
+    "pergunta": "O que significa a luz da bateria acesa em movimento?",
+    "resposta": "Ela indica descarga do circuito elétrico. Consulte uma Oficina Autorizada assim que possível."
+  },
+  {
+    "pergunta": "O que significa a luz da direção assistida acesa durante a condução?",
+    "resposta": "Ela indica falha no sistema de direção assistida. Consulte rapidamente uma Oficina Autorizada."
+  },
+  {
+    "pergunta": "O que devo fazer se a luz de pressão do óleo acender enquanto dirijo?",
+    "resposta": "Pare imediatamente e desligue o motor. Verifique o nível de óleo; se o nível estiver normal, a causa é outra e uma Oficina Autorizada deve ser consultada."
+  },
+  {
+    "pergunta": "O que significa a luz de controle dos gases do escapamento acesa continuamente?",
+    "resposta": "Se a luz ficar acesa continuamente, entre em contato o quanto antes com uma Oficina Autorizada."
+  },
+  {
+    "pergunta": "O que fazer se a luz de controle dos gases do escapamento piscar?",
+    "resposta": "Desacelere até a intermitência desaparecer e consulte uma Oficina Autorizada assim que possível."
+  },
+  {
+    "pergunta": "O que significa a luz do freio de estacionamento acesa?",
+    "resposta": "Ela acende ao ligar a ignição e deve apagar quando o freio de estacionamento não estiver acionado. Se acender ao frear com sinal sonoro, pode indicar baixo nível de fluido no circuito de freio."
+  },
+  {
+    "pergunta": "O que devo fazer se a luz do freio acender ao frear e soar um sinal?",
+    "resposta": "Pare o veículo, pois prosseguir pode ser perigoso, e entre em contato com uma Oficina Autorizada."
+  },
+  {
+    "pergunta": "Para que serve a luz de pré-aquecimento na versão flex?",
+    "resposta": "Ela indica que o combustível está sendo aquecido para melhorar a partida em dias frios. A partida só é liberada quando a luz apaga."
+  },
+  {
+    "pergunta": "O motor dá partida se a luz de pré-aquecimento estiver acesa ou piscando?",
+    "resposta": "Não. O manual informa que o motor não começará a funcionar com a luz de pré-aquecimento acesa ou piscando."
+  },
+  {
+    "pergunta": "O que significa a luz do ABS acesa em movimento?",
+    "resposta": "Ela sinaliza falha no sistema antibloqueio das rodas. A frenagem comum continua assegurada, mas sem a função ABS; consulte uma Oficina Autorizada assim que possível."
+  },
+  {
+    "pergunta": "O que significa a luz laranja de multifunção?",
+    "resposta": "Ela pode acender junto com outras luzes e indica necessidade de parada logo que possível em uma Oficina Autorizada, conduzindo com moderação."
+  },
+  {
+    "pergunta": "O que significa a luz vermelha de parada obrigatória?",
+    "resposta": "Se essa luz acender com sinal sonoro, pare imediatamente conforme as condições de circulação, desligue o motor e não tente dar a partida novamente. Consulte uma Oficina Autorizada."
+  },
+  {
+    "pergunta": "O que significa a mensagem VERIF BOCAL COMB?",
+    "resposta": "Ela indica que a tampa do bocal de combustível pode estar mal fechada ou faltando. Verifique se a tampa está corretamente fechada e faça o reset na página dedicada do computador de bordo."
+  },
+  {
+    "pergunta": "Como reiniciar o aviso de tampa do bocal de combustível?",
+    "resposta": "No computador de bordo, navegue até a página RESET BOCAL COMB usando o botão de comando e mantenha o botão pressionado por 3 segundos."
+  },
+  {
+    "pergunta": "Quais informações aparecem no computador de bordo?",
+    "resposta": "Dependendo da versão, ele pode mostrar hodômetro total, hodômetro parcial, combustível consumido, consumo médio, consumo instantâneo, autonomia, distância percorrida e velocidade média."
+  },
+  {
+    "pergunta": "Como zerar o hodômetro parcial?",
+    "resposta": "Selecione a função de hodômetro parcial no visor e mantenha pressionado o botão de seleção/redefinição até que o valor seja reinicializado."
+  },
+  {
+    "pergunta": "Como reiniciar os dados do computador de bordo?",
+    "resposta": "Selecione uma das visualizações do computador de bordo e mantenha pressionado o botão de seleção/redefinição até reiniciar os dados."
+  },
+  {
+    "pergunta": "Por que a autonomia pode aumentar depois de zerar o computador de bordo?",
+    "resposta": "Porque a autonomia considera o consumo médio desde a última redefinição. Nos primeiros quilômetros, o valor se ajusta conforme o consumo real."
+  },
+  {
+    "pergunta": "Como ajustar o relógio no visor do painel?",
+    "resposta": "Acesse a tela de ajuste pelo botão do painel, aguarde horas e minutos piscarem e pressione repetidamente ou mantenha o botão pressionado para ajustar os valores."
+  },
+  {
+    "pergunta": "Preciso acertar o relógio depois de desligar a bateria?",
+    "resposta": "Sim. Se houver interrupção da alimentação elétrica, como bateria desligada ou cabo cortado, pode ser necessário acertar o relógio novamente."
+  },
+  {
+    "pergunta": "O que significa o indicador de temperatura externa piscando?",
+    "resposta": "Quando a temperatura externa estiver entre cerca de -4 °C e +4 °C, os caracteres °C podem piscar para indicar risco de formação de gelo na estrada."
+  },
+  {
+    "pergunta": "Como usar o pisca-alerta?",
+    "resposta": "Acione o interruptor das luzes de advertência. Ele liga simultaneamente todos os pisca-alerta e deve ser usado em caso de perigo ou parada em local inadequado."
+  },
+  {
+    "pergunta": "Como funciona o modo impulsional das setas?",
+    "resposta": "Em manobras como troca de faixa, mova levemente a haste até a posição intermediária e solte. A haste retorna e a luz indicadora pisca três vezes."
+  },
+  {
+    "pergunta": "O que acontece se eu deixar os faróis acesos após desligar o motor?",
+    "resposta": "Ao abrir a porta do motorista, um alarme sonoro dispara para avisar que os faróis permaneceram acesos, pois há risco de descarga da bateria."
+  },
+  {
+    "pergunta": "Como acionar os faróis altos?",
+    "resposta": "Com os faróis baixos acesos, empurre a haste de iluminação. A luz indicadora acende no painel. Para voltar aos faróis baixos, puxe a haste em sua direção."
+  },
+  {
+    "pergunta": "Para que serve a regulagem de altura dos faróis?",
+    "resposta": "Ela corrige a altura dos faróis conforme a carga do veículo, para manter boa visibilidade sem ofuscar outros motoristas."
+  },
+  {
+    "pergunta": "Como usar o limpador do para-brisa?",
+    "resposta": "Com a ignição ligada, mova a haste ao redor do volante para selecionar parado, varredura lenta, intermitente, contínua lenta ou contínua rápida, conforme a versão."
+  },
+  {
+    "pergunta": "Como acionar o lavador do para-brisa?",
+    "resposta": "Com a ignição ligada, puxe a haste em sua direção. Uma ação breve aciona o lavador e uma varredura; uma ação prolongada aciona várias varreduras."
+  },
+  {
+    "pergunta": "O que devo fazer antes de limpar o para-brisa ou mexer no compartimento do motor?",
+    "resposta": "Coloque a haste do limpador na posição parada para evitar acionamento acidental, ferimentos ou danos."
+  },
+  {
+    "pergunta": "Posso usar o limpador com o vidro seco?",
+    "resposta": "Não é recomendado. O manual orienta não usar os limpadores quando os vidros estiverem secos e manter palhetas e vidros limpos com água e sabão."
+  },
+  {
+    "pergunta": "Quando devo substituir as palhetas do limpador?",
+    "resposta": "Substitua as palhetas assim que começarem a perder eficiência, aproximadamente após um ano, conforme a orientação do manual."
+  },
+  {
+    "pergunta": "O limpador traseiro liga sozinho ao engatar a ré?",
+    "resposta": "Se o limpador dianteiro estiver funcionando ou tiver sido desligado há menos de 2 minutos, o limpador traseiro pode ser ativado automaticamente ao engatar a marcha à ré."
+  },
+  {
+    "pergunta": "Como usar o desembaçador do vidro traseiro?",
+    "resposta": "Com o motor funcionando, pressione a tecla do desembaçador. A luz indicadora acende e a função desembaça ou descongela o vidro traseiro."
+  },
+  {
+    "pergunta": "O desembaçador traseiro desliga sozinho?",
+    "resposta": "Sim. Ele é interrompido automaticamente após um período definido pelo sistema ou quando a tecla é pressionada novamente."
+  },
+  {
+    "pergunta": "Qual é a capacidade útil do tanque de combustível do Kwid?",
+    "resposta": "A capacidade útil do tanque é de aproximadamente 38 litros."
+  },
+  {
+    "pergunta": "Como abrir a portinhola do tanque de combustível?",
+    "resposta": "Puxe o controle interno de abertura da portinhola do tanque."
+  },
+  {
+    "pergunta": "O que devo fazer antes de abastecer?",
+    "resposta": "Pare corretamente o veículo, desligue o motor, remova a chave da ignição e puxe o freio de mão ou deixe uma marcha engatada."
+  },
+  {
+    "pergunta": "Até quando devo abastecer o tanque?",
+    "resposta": "A capacidade útil é atingida na terceira parada automática da pistola. Não ultrapasse esse ponto para preservar o volume de expansão e evitar vazamentos."
+  },
+  {
+    "pergunta": "Que combustível usar nas versões Flex?",
+    "resposta": "As versões Flex podem usar gasolina e etanol em qualquer proporção, incluindo gasolina tipo C, gasolina premium ou álcool etílico hidratado."
+  },
+  {
+    "pergunta": "Que combustível usar nas versões a gasolina?",
+    "resposta": "Use obrigatoriamente gasolina sem chumbo, com índice de octano conforme as informações da portinhola do tanque."
+  },
+  {
+    "pergunta": "Posso colocar aditivo no combustível?",
+    "resposta": "Não acrescente reagente ou aditivo não aprovado, pois há risco de danificar o motor. Se desejar usar aditivo, utilize produto aprovado pelo Departamento Técnico."
+  },
+  {
+    "pergunta": "O que fazer se sentir odor persistente de combustível?",
+    "resposta": "Pare o veículo conforme as condições de circulação, desligue a ignição, acione o pisca-alerta, peça aos ocupantes que saiam e chame uma Oficina Autorizada."
+  },
+  {
+    "pergunta": "Como deve ser feita a rodagem nos primeiros 1.000 km?",
+    "resposta": "Até os primeiros 1.000 km, não ultrapasse 130 km/h na marcha mais elevada ou 3.000 a 3.500 rpm. O desempenho pleno ocorre após cerca de 3.000 km."
+  },
+  {
+    "pergunta": "Como dar partida no motor?",
+    "resposta": "Acione o motor de partida sem acelerar e solte a chave assim que o motor funcionar."
+  },
+  {
+    "pergunta": "É normal a partida com etanol demorar mais?",
+    "resposta": "Sim. Ao usar etanol, o manual orienta manter a chave acionada por mais tempo na partida, sendo normal ouvir ruídos ao dar partida."
+  },
+  {
+    "pergunta": "É normal a marcha lenta ficar acelerada após a partida?",
+    "resposta": "Sim. Depois que o veículo ficou parado por algumas horas, a rotação de marcha lenta pode ficar acelerada por alguns minutos para reduzir emissões de poluentes."
+  },
+  {
+    "pergunta": "Posso desligar a ignição antes de o veículo parar totalmente?",
+    "resposta": "Não. Desligar o motor antes da parada cancela assistências como freios e direção e impede o funcionamento de dispositivos de segurança passiva, como airbags."
+  },
+  {
+    "pergunta": "Como funciona a partida a frio com etanol?",
+    "resposta": "O veículo possui sistema automático de aquecimento do combustível quando abastecido com etanol. A partida é autorizada apenas quando a luz de aquecimento se apaga."
+  },
+  {
+    "pergunta": "O que fazer se a luz de aquecimento do combustível piscar?",
+    "resposta": "Volte a chave para a posição inicial e reinicie o procedimento de partida, aguardando a luz apagar antes de acionar o motor."
+  },
+  {
+    "pergunta": "Para que serve a função Stop & Start?",
+    "resposta": "Ela reduz consumo e emissões desligando temporariamente o motor em paradas, como congestionamentos ou semáforos, quando as condições do sistema são atendidas."
+  },
+  {
+    "pergunta": "Quando o motor entra em modo de espera no Stop & Start?",
+    "resposta": "Após certa velocidade desde a última parada, o motor pode entrar em espera quando o câmbio está em ponto morto, a embreagem está liberada e a velocidade é inferior a cerca de 4 km/h."
+  },
+  {
+    "pergunta": "Como o motor sai do modo de espera do Stop & Start?",
+    "resposta": "O motor volta a funcionar quando o pedal da embreagem é totalmente pressionado, com o câmbio em ponto morto ou com uma marcha engatada."
+  },
+  {
+    "pergunta": "Como impedir temporariamente que o Stop & Start desligue o motor?",
+    "resposta": "Em situações como atravessar um cruzamento, mantenha o pedal da embreagem pressionado para manter o motor funcionando."
+  },
+  {
+    "pergunta": "Quando o Stop & Start pode não ficar disponível?",
+    "resposta": "Ele pode ficar indisponível se a marcha à ré estiver engatada, o capô não estiver travado, a temperatura externa for muito baixa ou alta, a bateria estiver fraca ou o motor ainda estiver frio."
+  },
+  {
+    "pergunta": "Como desativar a função Stop & Start?",
+    "resposta": "Pressione o interruptor do Stop & Start. A luz integrada ao interruptor acende. Pressione novamente para reativar a função."
+  },
+  {
+    "pergunta": "O que fazer se a luz do interruptor Stop & Start acender sem eu desativar a função?",
+    "resposta": "Isso pode indicar falha no sistema. Consulte uma Oficina Autorizada."
+  },
+  {
+    "pergunta": "O que fazer após abastecer mudando de gasolina para etanol ou vice-versa?",
+    "resposta": "Conduza por 7 a 10 km ou por pelo menos 10 minutos para que a injeção eletrônica identifique e se adapte ao novo combustível."
+  },
+  {
+    "pergunta": "Posso insistir na partida se o motor não pegar?",
+    "resposta": "Não. Para evitar danos ao catalisador, não insista com o motor de partida, nem empurre ou puxe o veículo, sem identificar e corrigir a causa da falha."
+  },
+  {
+    "pergunta": "Como destravar o freio de estacionamento?",
+    "resposta": "Puxe a alavanca ligeiramente para cima, pressione o botão e desça a alavanca até o piso."
+  },
+  {
+    "pergunta": "Como travar o freio de estacionamento?",
+    "resposta": "Puxe a alavanca para cima e assegure-se de que o veículo ficou bem imobilizado."
+  },
+  {
+    "pergunta": "O que acontece se eu andar com o freio de estacionamento parcialmente acionado?",
+    "resposta": "A luz indicadora permanece acesa e há risco de aquecimento excessivo ou deterioração do sistema. O freio deve estar completamente liberado durante a condução."
+  },
+  {
+    "pergunta": "Em uma subida ou descida, posso precisar puxar mais o freio de estacionamento?",
+    "resposta": "Sim. Com o veículo parado, conforme a inclinação e a carga, pode ser necessário puxar a alavanca mais dois dentes e engatar 1ª marcha ou marcha à ré."
+  },
+  {
+    "pergunta": "O que acontece com a direção assistida se o motor parar?",
+    "resposta": "Ainda é possível girar o volante, mas a força necessária será maior que o usual. Nunca desligue o motor em uma descida ou com o veículo em movimento."
+  },
+  {
+    "pergunta": "Para que serve o ABS?",
+    "resposta": "Em frenagens intensas, o ABS impede o travamento das rodas, ajuda a manter o controle do veículo e pode otimizar a distância de frenagem, especialmente em piso de baixa aderência."
+  },
+  {
+    "pergunta": "Como devo frear em uma emergência com ABS?",
+    "resposta": "Aplique pressão forte e contínua no pedal do freio. Não é necessário bombear o pedal; o ABS modula o esforço no sistema de freios."
+  },
+  {
+    "pergunta": "O que indica vibração no pedal durante atuação do ABS?",
+    "resposta": "A vibração pode ser sentida quando o ABS está atuando. Isso é esperado durante frenagens intensas com o sistema em funcionamento."
+  },
+  {
+    "pergunta": "Para que serve o ESP?",
+    "resposta": "O ESP ajuda a manter a estabilidade em situações críticas, como desvio de obstáculo ou perda de aderência em curva, corrigindo a trajetória com freios e potência do motor."
+  },
+  {
+    "pergunta": "O que significa a luz do ESP piscando?",
+    "resposta": "Quando o sistema está atuando para corrigir a trajetória do veículo, a luz indicadora pisca no painel."
+  },
+  {
+    "pergunta": "Para que serve o auxílio de partida em subida?",
+    "resposta": "O HSA ajuda a arrancar em subidas segurando o veículo por cerca de 2 segundos quando o motorista tira o pé do freio para acelerar."
+  },
+  {
+    "pergunta": "O auxílio de partida em subida substitui o freio?",
+    "resposta": "Não. Ele não imobiliza o veículo permanentemente nem impede recuo em todas as situações. Use o pedal do freio quando necessário."
+  },
+  {
+    "pergunta": "Quando a câmera de marcha à ré mostra imagem?",
+    "resposta": "Dependendo da versão, ao engatar a marcha à ré, e por até cerca de 5 segundos após trocar para outra marcha, a câmera mostra a região traseira na tela multimídia."
+  },
+  {
+    "pergunta": "O que verificar se a câmera de marcha à ré não mostrar bem a imagem?",
+    "resposta": "Verifique se a câmera não está obstruída por sujeira, lama, neve ou outro material. Se a tela preta persistir, consulte uma Oficina Autorizada."
+  },
+  {
+    "pergunta": "A câmera de marcha à ré substitui a atenção do motorista?",
+    "resposta": "Não. Ela é uma ajuda complementar; o motorista deve continuar atento a crianças, animais, carrinhos, bicicletas e obstáculos pequenos ou finos durante a manobra."
+  },
+  {
+    "pergunta": "O que significam as cores da câmera de ré?",
+    "resposta": "A marca vermelha indica cerca de 30 cm atrás do veículo, a amarela cerca de 70 cm e a verde cerca de 150 cm."
+  },
+  {
+    "pergunta": "Como funciona o sistema de controle da pressão dos pneus?",
+    "resposta": "Ele detecta perda de pressão medindo a velocidade das rodas durante a condução. Se houver pressão insuficiente, a luz indicadora acende para alertar o motorista."
+  },
+  {
+    "pergunta": "Quando devo reinicializar o sistema de pressão dos pneus?",
+    "resposta": "Após encher ou ajustar a pressão, trocar uma roda, usar o kit de enchimento, fazer rodízio ou alterar a pressão de referência conforme carga e uso do veículo."
+  },
+  {
+    "pergunta": "Como reinicializar o valor de referência da pressão dos pneus?",
+    "resposta": "Com a ignição ligada e o veículo parado, selecione a função PRESSÃO PNEU SET no painel e mantenha o botão pressionado por cerca de 4 segundos."
+  },
+  {
+    "pergunta": "O que fazer se a luz de pressão dos pneus acender sem piscar?",
+    "resposta": "Isso indica que pelo menos um pneu está vazio ou furado. Pare com segurança, verifique os quatro pneus a frio, calibre ou substitua o pneu e reinicialize o sistema."
+  },
+  {
+    "pergunta": "O sistema detecta perda repentina de pressão?",
+    "resposta": "A perda repentina, como rompimento de pneu, pode não ser detectada pelo sistema. Por isso, a inspeção visual e a condução atenta continuam necessárias."
+  },
+  {
+    "pergunta": "Como calibrar os pneus corretamente?",
+    "resposta": "Verifique as pressões a frio conforme a etiqueta do veículo. Se medir com pneus quentes, acrescente de 0,2 a 0,3 bar às pressões recomendadas e nunca esvazie pneu quente."
+  },
+  {
+    "pergunta": "Com que frequência devo verificar a pressão dos pneus?",
+    "resposta": "O manual recomenda verificar, em média, uma vez por mês e antes de viagens longas, incluindo o estepe."
+  },
+  {
+    "pergunta": "Quando devo trocar os pneus por desgaste?",
+    "resposta": "Quando os indicadores de desgaste ficarem visíveis nos sulcos. Nesse ponto, a profundidade é de aproximadamente 1,6 mm, o que prejudica a aderência em piso molhado."
+  },
+  {
+    "pergunta": "O rodízio de pneus é recomendado?",
+    "resposta": "Não. O manual informa que a prática de rodízio de pneus não é recomendada."
+  },
+  {
+    "pergunta": "O que devo observar ao substituir pneus?",
+    "resposta": "Monte pneus da mesma marca, dimensão, tipo e estrutura no mesmo eixo, com capacidade de carga e classificação de velocidade pelo menos iguais às originais ou recomendadas."
+  },
+  {
+    "pergunta": "Como regular a temperatura do ar na cabine?",
+    "resposta": "Gire o comando de temperatura conforme desejado. Quanto mais o cursor estiver na zona vermelha, maior será a temperatura do ar."
+  },
+  {
+    "pergunta": "Como regular a velocidade de ventilação?",
+    "resposta": "Gire o comando de ventilação de 0 a 4. Quanto mais à direita estiver o comando, maior será a entrada de ar na cabine."
+  },
+  {
+    "pergunta": "Quando usar a reciclagem de ar?",
+    "resposta": "Use para isolar a cabine do ambiente externo, como em zonas poluídas, ou para atingir mais rapidamente a temperatura desejada."
+  },
+  {
+    "pergunta": "Posso deixar a reciclagem de ar ligada por muito tempo?",
+    "resposta": "Não é recomendado. O uso prolongado pode embaçar os vidros laterais e o para-brisa e causar odores por falta de renovação do ar."
+  },
+  {
+    "pergunta": "Como fazer o desembaçamento rápido?",
+    "resposta": "Use a posição máxima de ar aquecido, ventilação na velocidade 4, direcione o fluxo para o para-brisa e permita entrada de ar externo. O ar-condicionado acelera o desembaçamento."
+  },
+  {
+    "pergunta": "Como ligar o ar-condicionado?",
+    "resposta": "Nas versões equipadas, pressione o botão do ar-condicionado. A luz indicadora acesa mostra que está ligado. Ele não ativa se o comando de ventilação estiver em 0."
+  },
+  {
+    "pergunta": "O ar-condicionado aumenta o consumo?",
+    "resposta": "Sim. É normal haver aumento do consumo de combustível com o ar-condicionado em funcionamento, especialmente em uso urbano."
+  },
+  {
+    "pergunta": "É normal aparecer água sob o veículo após usar o ar-condicionado?",
+    "resposta": "Sim. Após uso prolongado, é normal aparecer água sob o veículo devido à condensação do sistema."
+  },
+  {
+    "pergunta": "Com que frequência devo ligar o ar-condicionado?",
+    "resposta": "O manual recomenda usar o ar-condicionado regularmente, mesmo em tempo frio, ligando-o pelo menos uma vez por mês por aproximadamente 5 minutos."
+  },
+  {
+    "pergunta": "Como operar os vidros manuais?",
+    "resposta": "Nas versões com vidros manuais, gire a manivela para baixar ou subir o vidro até a altura desejada."
+  },
+  {
+    "pergunta": "Como operar os vidros elétricos?",
+    "resposta": "Pressione a parte inferior do interruptor para baixar o vidro ou a parte superior para levantá-lo até a altura desejada."
+  },
+  {
+    "pergunta": "Onde fica o estepe?",
+    "resposta": "O estepe fica no porta-malas. Para acessá-lo, abra o porta-malas, levante o tapete, retire o macaco, afrouxe o parafuso de suporte e retire o estepe."
+  },
+  {
+    "pergunta": "O que devo observar ao usar um estepe menor?",
+    "resposta": "Use-o apenas temporariamente, não ultrapasse a velocidade indicada na etiqueta da roda, evite acelerações e desacelerações bruscas e substitua-o por uma roda idêntica à original assim que possível."
+  },
+  {
+    "pergunta": "Onde ficam as ferramentas para troca de roda?",
+    "resposta": "As ferramentas ficam no porta-malas. A chave de roda pode estar na lateral esquerda do porta-malas ou junto ao macaco no centro do estepe, conforme a versão."
+  },
+  {
+    "pergunta": "Para que serve o macaco do veículo?",
+    "resposta": "O macaco destina-se apenas à troca de rodas. Ele não deve ser usado para outros reparos nem para acessar a parte de baixo do veículo."
+  },
+  {
+    "pergunta": "O que fazer antes de trocar uma roda?",
+    "resposta": "Acione o pisca-alerta, estacione em local afastado, plano, firme e não escorregadio, puxe o freio de estacionamento, engrene 1ª ou ré e peça aos ocupantes que saiam."
+  },
+  {
+    "pergunta": "Onde posicionar o macaco para trocar uma roda?",
+    "resposta": "Coloque o macaco sob a carroceria, alinhado com a marca de fixação mais próxima da roda a substituir, e certifique-se de que ele esteja corretamente assentado."
+  },
+  {
+    "pergunta": "Até que altura devo levantar o veículo para trocar a roda?",
+    "resposta": "Abra o macaco apenas até a roda a ser substituída ficar, no máximo, 3 cm do solo."
+  },
+  {
+    "pergunta": "O que fazer depois de colocar a roda substituta?",
+    "resposta": "Aperte os parafusos uniformemente, baixe o veículo, aperte firmemente os parafusos, guarde a roda substituída no espaço do estepe e prenda-a com o parafuso de fixação."
+  },
+  {
+    "pergunta": "O que fazer se um equipamento elétrico parar de funcionar?",
+    "resposta": "Verifique o estado dos fusíveis da cabine. Substitua o fusível defeituoso obrigatoriamente por outro de mesma amperagem."
+  },
+  {
+    "pergunta": "Posso usar fusível de amperagem maior?",
+    "resposta": "Não. Um fusível de amperagem alta demais pode causar aquecimento excessivo do circuito elétrico e risco de incêndio."
+  },
+  {
+    "pergunta": "Como substituir a bateria do controle remoto?",
+    "resposta": "Retire a tampa do controle com uma chave de fenda de ponta plana, substitua a bateria observando a polaridade gravada na tampa e encaixe bem a tampa novamente."
+  },
+  {
+    "pergunta": "Quanto dura a bateria do controle remoto?",
+    "resposta": "O manual informa que as baterias estão disponíveis em Oficina Autorizada e têm vida útil de cerca de dois anos."
+  },
+  {
+    "pergunta": "Posso jogar baterias usadas no lixo doméstico?",
+    "resposta": "Não. Entregue as baterias usadas a um órgão encarregado de reciclagem."
+  },
+  {
+    "pergunta": "Como evitar faíscas ao lidar com a bateria do veículo?",
+    "resposta": "Desligue consumidores de energia antes de conectar ou desconectar a bateria, desligue o carregador antes de conectar ou desconectar, não coloque objetos metálicos sobre a bateria e aguarde pelo menos um minuto após desligar o motor."
+  },
+  {
+    "pergunta": "Que tipo de carregador usar na bateria?",
+    "resposta": "Use carregador compatível com bateria de tensão nominal de 12 volts e siga as instruções do fornecedor do carregador."
+  },
+  {
+    "pergunta": "Posso desligar a bateria com o motor funcionando?",
+    "resposta": "Não. O manual orienta não desligar a bateria enquanto o motor estiver em funcionamento."
+  },
+  {
+    "pergunta": "O que fazer se ácido da bateria tocar a pele ou os olhos?",
+    "resposta": "Lave a região atingida com água abundante e, se necessário, consulte um médico."
+  },
+  {
+    "pergunta": "Como fazer partida com bateria auxiliar?",
+    "resposta": "Use cabos apropriados em bom estado, com duas baterias de 12 volts. Ligue o cabo positivo aos bornes positivos e o negativo ao terminal negativo indicado, evitando contato entre veículos e cabos."
+  },
+  {
+    "pergunta": "Como limpar os cintos de segurança?",
+    "resposta": "Mantenha-os limpos usando produtos selecionados pela assistência técnica ou água morna com sabão aplicada com esponja. Depois seque com pano. Detergentes e produtos químicos são proibidos."
+  },
+  {
+    "pergunta": "Como limpar os vidros dos instrumentos e telas?",
+    "resposta": "Use pano macio ou algodão. Se necessário, umedeça levemente com água e sabão, limpe com pano úmido e finalize cuidadosamente com pano seco e macio."
+  },
+  {
+    "pergunta": "Posso usar álcool ou aerossol nas telas e instrumentos?",
+    "resposta": "Não. O manual orienta não utilizar produtos que contenham álcool ou aerossóis nessa área."
+  },
+  {
+    "pergunta": "Como limpar bancos e tecidos internos?",
+    "resposta": "Aspire regularmente. Para manchas líquidas, use solução de água e sabão e absorva sem esfregar. Para manchas sólidas, remova o excesso com cuidado antes da limpeza."
+  },
+  {
+    "pergunta": "O que verificar ao recolocar tapetes após a limpeza?",
+    "resposta": "Recoloque cada tapete no lado correto e prenda-o com os elementos de fixação. Com o veículo parado, confira se nada impede o curso dos pedais."
+  },
+  {
+    "pergunta": "Posso usar jato de alta pressão dentro da cabine?",
+    "resposta": "Não. Equipamento de alta pressão ou pulverizadores no compartimento de passageiros podem prejudicar componentes elétricos e eletrônicos."
+  }
+]

@@ -1,97 +1,104 @@
-# Tabelas da Análise - Modelo 1
+# Tabelas de analise - modelo 1
 
-Fonte: `analises-modelo1.ipynb`.
+Fonte: `analises-modelo1.ipynb`. Valores extraidos das saidas exibidas no notebook.
 
-## Resumo Por Modelo
+## Resumo por modelo
 
-| model | n | f1_mean | f1_median | success_rate | doubt_mean | reasoning_tok_mean | answer_tok_mean | reasoning_ratio_mean | in_tok_mean | out_tok_mean | retrieval_reasoning_overlap_mean | reasoning_answer_overlap_mean | cot_cov_mean | cot_novelty_mean | cot_chunk_max_cov_mean | cot_chunk_entropy_mean | cot_chunks_used_mean |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| original | 100 | 0.4659 | 0.4718 | 0.42 | 0.46 | 319.79 | 62.81 | 13.844 | 1055.21 | 383.82 | 0.1222 | 0.1234 | 0.3619 | 0.6381 | 0.2362 | 1.5566 | 4.98 |
-| shuffled | 100 | 0.4775 | 0.4987 | 0.49 | 0.39 | 310.37 | 74.54 | 10.7293 | 1055.21 | 386.17 | 0.1089 | 0.1222 | 0.3334 | 0.6666 | 0.2218 | 1.5366 | 4.95 |
+| indice | model | n | f1_mean | f1_median | success_rate | doubt_mean | reasoning_tok_mean | answer_tok_mean | reasoning_ratio_mean | in_tok_mean | out_tok_mean | retrieval_reasoning_overlap_mean | reasoning_answer_overlap_mean | cot_cov_mean | cot_novelty_mean | cot_chunk_max_cov_mean | cot_chunk_entropy_mean | cot_chunks_used_mean |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 0 | original | 50 | 0.655947 | 0.637027 | 0.960000 | 0.300000 | 262.680000 | 35.380000 | 9.821334 | 1793.420000 | 386.880000 | 0.040978 | 0.047076 | 0.173990 | 0.826010 | 0.107323 | 2.018656 | 7.960000 |
+| 1 | shuffled | 50 | 0.646959 | 0.647385 | 0.880000 | 0.260000 | 253.220000 | 30.020000 | 10.788014 | 1793.420000 | 360.360000 | 0.028776 | 0.029659 | 0.135159 | 0.864841 | 0.089759 | 1.985982 | 7.860000 |
 
-## Resumo Por Modelo E Sucesso
 
-| model | is_success | n | f1_mean | doubt_mean | retrieval_reasoning_overlap_mean | reasoning_answer_overlap_mean | cot_cov_mean | cot_novelty_mean | cot_chunk_entropy_mean | cot_chunks_used_mean |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| original | 0 | 58 | 0.3991 | 0.6897 | 0.0932 | 0.0582 | 0.2952 | 0.7048 | 1.5453 | 4.9655 |
-| original | 1 | 42 | 0.5581 | 0.1429 | 0.1623 | 0.2134 | 0.4539 | 0.5461 | 1.5721 | 5 |
-| shuffled | 0 | 51 | 0.4015 | 0.5686 | 0.0827 | 0.051 | 0.282 | 0.718 | 1.5287 | 4.902 |
-| shuffled | 1 | 49 | 0.5566 | 0.2041 | 0.1361 | 0.1963 | 0.3869 | 0.6131 | 1.5448 | 5 |
+## Resumo por modelo e sucesso
 
-## Correlações: Original
+| indice | model | is_success | n | f1_mean | doubt_mean | retrieval_reasoning_overlap_mean | reasoning_answer_overlap_mean | cot_cov_mean | cot_novelty_mean | cot_chunk_entropy_mean | cot_chunks_used_mean |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 0 | original | 0 | 2 | 0.454719 | 0.500000 | 0.027460 | 0.006198 | 0.117952 | 0.882048 | 2.040850 | 8.000000 |
+| 1 | original | 1 | 48 | 0.664332 | 0.291667 | 0.041541 | 0.048780 | 0.176325 | 0.823675 | 2.017731 | 7.958333 |
+| 2 | shuffled | 0 | 6 | 0.454875 | 0.666667 | 0.018277 | 0.006482 | 0.084573 | 0.915427 | 1.846034 | 7.166667 |
+| 3 | shuffled | 1 | 44 | 0.673152 | 0.204545 | 0.030208 | 0.032820 | 0.142057 | 0.857943 | 2.005066 | 7.954545 |
 
-| variavel | f1_vs_gabarito | doubt_count | reasoning_tok_count | answer_tok_count | reasoning_ratio | retrieval_reasoning_lexical_overlap | reasoning_answer_overlap | cot_cov_overall | cot_novelty | cot_retrieval_jaccard | cot_chunk_max_cov | cot_chunk_entropy | cot_chunks_used |
+
+## Correlacoes: original
+
+| indice | f1_vs_gabarito | doubt_count | reasoning_tok_count | answer_tok_count | reasoning_ratio | retrieval_reasoning_lexical_overlap | reasoning_answer_overlap | cot_cov_overall | cot_novelty | cot_retrieval_jaccard | cot_chunk_max_cov | cot_chunk_entropy | cot_chunks_used |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| f1_vs_gabarito | 1 | -0.4824 | 0.2791 | 0.5931 | -0.7481 | 0.3445 | 0.5941 | 0.312 | -0.312 | 0.3497 | 0.3136 | 0.1671 | 0.0471 |
-| doubt_count | -0.4824 | 1 | -0.0789 | -0.2961 | 0.4736 | -0.401 | -0.4342 | -0.3939 | 0.3939 | -0.3947 | -0.3916 | -0.0159 | 0.096 |
-| reasoning_tok_count | 0.2791 | -0.0789 | 1 | 0.3585 | 0.0983 | 0.4907 | 0.1929 | 0.2736 | -0.2736 | 0.5004 | 0.1055 | 0.1831 | 0.0394 |
-| answer_tok_count | 0.5931 | -0.2961 | 0.3585 | 1 | -0.6598 | 0.3814 | 0.6183 | 0.2715 | -0.2715 | 0.3912 | 0.2108 | 0.1919 | -0.025 |
-| reasoning_ratio | -0.7481 | 0.4736 | 0.0983 | -0.6598 | 1 | -0.1732 | -0.658 | -0.1933 | 0.1933 | -0.1714 | -0.2402 | -0.084 | 0.0627 |
-| retrieval_reasoning_lexical_overlap | 0.3445 | -0.401 | 0.4907 | 0.3814 | -0.1732 | 1 | 0.6284 | 0.9242 | -0.9242 | 0.9934 | 0.8268 | 0.4007 | 0.1786 |
-| reasoning_answer_overlap | 0.5941 | -0.4342 | 0.1929 | 0.6183 | -0.658 | 0.6284 | 1 | 0.6745 | -0.6745 | 0.6468 | 0.6626 | 0.3012 | 0.1237 |
-| cot_cov_overall | 0.312 | -0.3939 | 0.2736 | 0.2715 | -0.1933 | 0.9242 | 0.6745 | 1 | -1 | 0.9329 | 0.9492 | 0.4257 | 0.1947 |
-| cot_novelty | -0.312 | 0.3939 | -0.2736 | -0.2715 | 0.1933 | -0.9242 | -0.6745 | -1 | 1 | -0.9329 | -0.9492 | -0.4257 | -0.1947 |
-| cot_retrieval_jaccard | 0.3497 | -0.3947 | 0.5004 | 0.3912 | -0.1714 | 0.9934 | 0.6468 | 0.9329 | -0.9329 | 1 | 0.8312 | 0.4114 | 0.1771 |
-| cot_chunk_max_cov | 0.3136 | -0.3916 | 0.1055 | 0.2108 | -0.2402 | 0.8268 | 0.6626 | 0.9492 | -0.9492 | 0.8312 | 1 | 0.3384 | 0.201 |
-| cot_chunk_entropy | 0.1671 | -0.0159 | 0.1831 | 0.1919 | -0.084 | 0.4007 | 0.3012 | 0.4257 | -0.4257 | 0.4114 | 0.3384 | 1 | 0.5347 |
-| cot_chunks_used | 0.0471 | 0.096 | 0.0394 | -0.025 | 0.0627 | 0.1786 | 0.1237 | 0.1947 | -0.1947 | 0.1771 | 0.201 | 0.5347 | 1 |
+| f1_vs_gabarito | 1.000000 | -0.041939 | -0.372585 | -0.119807 | -0.254583 | -0.040332 | 0.023709 | -0.022279 | 0.022279 | -0.068334 | 0.038466 | -0.102883 | -0.014975 |
+| doubt_count | -0.041939 | 1.000000 | 0.155581 | -0.193281 | 0.361525 | -0.257814 | -0.293347 | -0.286224 | 0.286224 | -0.249322 | -0.261371 | 0.068779 | 0.093522 |
+| reasoning_tok_count | -0.372585 | 0.155581 | 1.000000 | 0.173780 | 0.487124 | -0.089431 | -0.280185 | -0.198585 | 0.198585 | -0.049780 | -0.252864 | 0.127622 | 0.057398 |
+| answer_tok_count | -0.119807 | -0.193281 | 0.173780 | 1.000000 | -0.421977 | -0.167871 | -0.080554 | -0.164784 | 0.164784 | -0.133457 | -0.199679 | -0.060022 | -0.040614 |
+| reasoning_ratio | -0.254583 | 0.361525 | 0.487124 | -0.421977 | 1.000000 | 0.000759 | -0.175141 | -0.058918 | 0.058918 | -0.006340 | -0.073751 | 0.170957 | 0.081942 |
+| retrieval_reasoning_lexical_overlap | -0.040332 | -0.257814 | -0.089431 | -0.167871 | 0.000759 | 1.000000 | 0.879927 | 0.952602 | -0.952602 | 0.994510 | 0.928604 | 0.380411 | 0.065180 |
+| reasoning_answer_overlap | 0.023709 | -0.293347 | -0.280185 | -0.080554 | -0.175141 | 0.879927 | 1.000000 | 0.930031 | -0.930031 | 0.865817 | 0.920437 | 0.338427 | 0.039460 |
+| cot_cov_overall | -0.022279 | -0.286224 | -0.198585 | -0.164784 | -0.058918 | 0.952602 | 0.930031 | 1.000000 | -1.000000 | 0.947157 | 0.988763 | 0.398892 | 0.065174 |
+| cot_novelty | 0.022279 | 0.286224 | 0.198585 | 0.164784 | 0.058918 | -0.952602 | -0.930031 | -1.000000 | 1.000000 | -0.947157 | -0.988763 | -0.398892 | -0.065174 |
+| cot_retrieval_jaccard | -0.068334 | -0.249322 | -0.049780 | -0.133457 | -0.006340 | 0.994510 | 0.865817 | 0.947157 | -0.947157 | 1.000000 | 0.922345 | 0.398008 | 0.075283 |
+| cot_chunk_max_cov | 0.038466 | -0.261371 | -0.252864 | -0.199679 | -0.073751 | 0.928604 | 0.920437 | 0.988763 | -0.988763 | 0.922345 | 1.000000 | 0.387771 | 0.069401 |
+| cot_chunk_entropy | -0.102883 | 0.068779 | 0.127622 | -0.060022 | 0.170957 | 0.380411 | 0.338427 | 0.398892 | -0.398892 | 0.398008 | 0.387771 | 1.000000 | 0.786683 |
+| cot_chunks_used | -0.014975 | 0.093522 | 0.057398 | -0.040614 | 0.081942 | 0.065180 | 0.039460 | 0.065174 | -0.065174 | 0.075283 | 0.069401 | 0.786683 | 1.000000 |
 
-## Correlações: Shuffled
 
-| variavel | f1_vs_gabarito | doubt_count | reasoning_tok_count | answer_tok_count | reasoning_ratio | retrieval_reasoning_lexical_overlap | reasoning_answer_overlap | cot_cov_overall | cot_novelty | cot_retrieval_jaccard | cot_chunk_max_cov | cot_chunk_entropy | cot_chunks_used |
+## Correlacoes: shuffled
+
+| indice | f1_vs_gabarito | doubt_count | reasoning_tok_count | answer_tok_count | reasoning_ratio | retrieval_reasoning_lexical_overlap | reasoning_answer_overlap | cot_cov_overall | cot_novelty | cot_retrieval_jaccard | cot_chunk_max_cov | cot_chunk_entropy | cot_chunks_used |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| f1_vs_gabarito | 1 | -0.2788 | 0.3876 | 0.6143 | -0.8149 | 0.318 | 0.5651 | 0.2289 | -0.2289 | 0.332 | 0.2405 | 0.0394 | 0.0961 |
-| doubt_count | -0.2788 | 1 | -0.1499 | -0.2238 | 0.3768 | -0.3285 | -0.3547 | -0.313 | 0.313 | -0.3055 | -0.3538 | -0.0231 | -0.0023 |
-| reasoning_tok_count | 0.3876 | -0.1499 | 1 | 0.4981 | -0.232 | 0.4771 | 0.3623 | 0.3047 | -0.3047 | 0.4847 | 0.191 | 0.2588 | 0.1261 |
-| answer_tok_count | 0.6143 | -0.2238 | 0.4981 | 1 | -0.6978 | 0.1739 | 0.3954 | 0.0464 | -0.0464 | 0.1873 | 0.0026 | 0.0525 | 0.0127 |
-| reasoning_ratio | -0.8149 | 0.3768 | -0.232 | -0.6978 | 1 | -0.2066 | -0.5328 | -0.1291 | 0.1291 | -0.2171 | -0.1474 | 0.1061 | 0.0452 |
-| retrieval_reasoning_lexical_overlap | 0.318 | -0.3285 | 0.4771 | 0.1739 | -0.2066 | 1 | 0.7604 | 0.9332 | -0.9332 | 0.9935 | 0.8685 | 0.2909 | 0.1726 |
-| reasoning_answer_overlap | 0.5651 | -0.3547 | 0.3623 | 0.3954 | -0.5328 | 0.7604 | 1 | 0.7383 | -0.7383 | 0.7673 | 0.7014 | 0.2171 | 0.1363 |
-| cot_cov_overall | 0.2289 | -0.313 | 0.3047 | 0.0464 | -0.1291 | 0.9332 | 0.7383 | 1 | -1 | 0.942 | 0.9604 | 0.3139 | 0.1973 |
-| cot_novelty | -0.2289 | 0.313 | -0.3047 | -0.0464 | 0.1291 | -0.9332 | -0.7383 | -1 | 1 | -0.942 | -0.9604 | -0.3139 | -0.1973 |
-| cot_retrieval_jaccard | 0.332 | -0.3055 | 0.4847 | 0.1873 | -0.2171 | 0.9935 | 0.7673 | 0.942 | -0.942 | 1 | 0.8753 | 0.3083 | 0.1829 |
-| cot_chunk_max_cov | 0.2405 | -0.3538 | 0.191 | 0.0026 | -0.1474 | 0.8685 | 0.7014 | 0.9604 | -0.9604 | 0.8753 | 1 | 0.2297 | 0.1948 |
-| cot_chunk_entropy | 0.0394 | -0.0231 | 0.2588 | 0.0525 | 0.1061 | 0.2909 | 0.2171 | 0.3139 | -0.3139 | 0.3083 | 0.2297 | 1 | 0.7943 |
-| cot_chunks_used | 0.0961 | -0.0023 | 0.1261 | 0.0127 | 0.0452 | 0.1726 | 0.1363 | 0.1973 | -0.1973 | 0.1829 | 0.1948 | 0.7943 | 1 |
+| f1_vs_gabarito | 1.000000 | -0.116525 | -0.346432 | 0.086494 | -0.561695 | 0.184109 | 0.301329 | 0.192894 | -0.192894 | 0.154079 | 0.206158 | 0.294957 | 0.274804 |
+| doubt_count | -0.116525 | 1.000000 | 0.124823 | -0.331903 | 0.486519 | -0.108408 | -0.059480 | -0.159971 | 0.159971 | -0.140488 | -0.136277 | -0.182146 | -0.176234 |
+| reasoning_tok_count | -0.346432 | 0.124823 | 1.000000 | 0.451444 | 0.273943 | -0.083188 | -0.133251 | -0.187932 | 0.187932 | -0.076570 | -0.201297 | 0.129335 | 0.140757 |
+| answer_tok_count | 0.086494 | -0.331903 | 0.451444 | 1.000000 | -0.556583 | -0.127086 | -0.171511 | -0.166097 | 0.166097 | -0.113257 | -0.174566 | 0.157205 | 0.183561 |
+| reasoning_ratio | -0.561695 | 0.486519 | 0.273943 | -0.556583 | 1.000000 | -0.046849 | -0.082385 | -0.060873 | 0.060873 | -0.031336 | -0.086404 | -0.069045 | -0.100013 |
+| retrieval_reasoning_lexical_overlap | 0.184109 | -0.108408 | -0.083188 | -0.127086 | -0.046849 | 1.000000 | 0.941279 | 0.982644 | -0.982644 | 0.990544 | 0.971937 | 0.139200 | 0.095769 |
+| reasoning_answer_overlap | 0.301329 | -0.059480 | -0.133251 | -0.171511 | -0.082385 | 0.941279 | 1.000000 | 0.932108 | -0.932108 | 0.925527 | 0.932981 | 0.172458 | 0.119222 |
+| cot_cov_overall | 0.192894 | -0.159971 | -0.187932 | -0.166097 | -0.060873 | 0.982644 | 0.932108 | 1.000000 | -1.000000 | 0.986290 | 0.985837 | 0.157986 | 0.111972 |
+| cot_novelty | -0.192894 | 0.159971 | 0.187932 | 0.166097 | 0.060873 | -0.982644 | -0.932108 | -1.000000 | 1.000000 | -0.986290 | -0.985837 | -0.157986 | -0.111972 |
+| cot_retrieval_jaccard | 0.154079 | -0.140488 | -0.076570 | -0.113257 | -0.031336 | 0.990544 | 0.925527 | 0.986290 | -0.986290 | 1.000000 | 0.982120 | 0.172103 | 0.126195 |
+| cot_chunk_max_cov | 0.206158 | -0.136277 | -0.201297 | -0.174566 | -0.086404 | 0.971937 | 0.932981 | 0.985837 | -0.985837 | 0.982120 | 1.000000 | 0.159728 | 0.117145 |
+| cot_chunk_entropy | 0.294957 | -0.182146 | 0.129335 | 0.157205 | -0.069045 | 0.139200 | 0.172458 | 0.157986 | -0.157986 | 0.172103 | 0.159728 | 1.000000 | 0.953160 |
+| cot_chunks_used | 0.274804 | -0.176234 | 0.140757 | 0.183561 | -0.100013 | 0.095769 | 0.119222 | 0.111972 | -0.111972 | 0.126195 | 0.117145 | 0.953160 | 1.000000 |
 
-## Médias Globais: Success Vs Fail
 
-| is_success | cot_cov_overall | cot_novelty | cot_chunk_entropy | cot_chunks_used | retrieval_reasoning_lexical_overlap | doubt_count |
-| --- | --- | --- | --- | --- | --- | --- |
-| 0 | 0.289 | 0.711 | 1.5375 | 4.9358 | 0.0883 | 0.633 |
-| 1 | 0.4178 | 0.5822 | 1.5574 | 5 | 0.1482 | 0.1758 |
+## Medias globais: success vs fail
 
-## Deltas (Shuffled - Original)
-
-| variavel | mean | std | min | 25% | 50% | 75% | max |
+| indice | is_success | cot_cov_overall | cot_novelty | cot_chunk_entropy | cot_chunks_used | retrieval_reasoning_lexical_overlap | doubt_count |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| f1_vs_gabarito_delta | 0.0116 | 0.0754 | -0.1998 | -0.0021 | 0 | 0.0249 | 0.2051 |
-| cot_cov_overall_delta | -0.0285 | 0.2048 | -0.4979 | -0.0565 | -0.0079 | 0.032 | 0.5202 |
-| cot_novelty_delta | 0.0285 | 0.2048 | -0.5202 | -0.032 | 0.0079 | 0.0565 | 0.4979 |
-| cot_chunk_entropy_delta | -0.02 | 0.113 | -0.788 | -0.0198 | -0.0012 | 0.0168 | 0.2879 |
-| retrieval_reasoning_lexical_overlap_delta | -0.0133 | 0.0811 | -0.259 | -0.0408 | -0.0013 | 0.0221 | 0.1743 |
-| reasoning_answer_overlap_delta | -0.0012 | 0.124 | -0.3279 | -0.038 | 0.0102 | 0.0485 | 0.3302 |
-| doubt_count_delta | -0.07 | 0.8439 | -3 | -0.25 | 0 | 0 | 2 |
-| sent_support_rate_delta | -0.0205 | 0.1542 | -0.5714 | -0.0979 | 0 | 0.0501 | 0.5897 |
+| 0 | 0 | 0.092918 | 0.907082 | 1.894738 | 7.375000 | 0.020573 | 0.625000 |
+| 1 | 1 | 0.159936 | 0.840064 | 2.011674 | 7.956522 | 0.036121 | 0.250000 |
 
-## Correlação Dos Deltas Com Δf1
 
-| variavel | f1_vs_gabarito_delta |
+## Deltas (shuffled - original)
+
+| indice | mean | std | min | 25% | 50% | 75% | max |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| f1_vs_gabarito_delta | -0.008988 | 0.109351 | -0.411331 | -0.034783 | 0.000000 | 0.056171 | 0.256068 |
+| cot_cov_overall_delta | -0.038831 | 0.194961 | -0.593271 | -0.028153 | -0.003110 | 0.009758 | 0.572136 |
+| cot_novelty_delta | 0.038831 | 0.194961 | -0.572136 | -0.009758 | 0.003110 | 0.028153 | 0.593271 |
+| cot_chunk_entropy_delta | -0.032674 | 0.167091 | -1.069544 | -0.040779 | -0.007902 | 0.016982 | 0.304126 |
+| retrieval_reasoning_lexical_overlap_delta | -0.012202 | 0.058098 | -0.185099 | -0.008255 | -0.001088 | 0.003520 | 0.152804 |
+| reasoning_answer_overlap_delta | -0.017417 | 0.073124 | -0.218824 | -0.017110 | -0.003502 | 0.008799 | 0.181034 |
+| doubt_count_delta | -0.040000 | 0.637598 | -1.000000 | 0.000000 | 0.000000 | 0.000000 | 1.000000 |
+| sent_support_rate_delta | -0.010880 | 0.086080 | -0.333333 | 0.000000 | 0.000000 | 0.000000 | 0.333333 |
+
+
+## Correlacao dos deltas com Delta F1
+
+| indice | f1_vs_gabarito_delta |
 | --- | --- |
-| f1_vs_gabarito_delta | 1 |
-| reasoning_answer_overlap_delta | 0.4551 |
-| retrieval_reasoning_lexical_overlap_delta | 0.2114 |
-| cot_cov_overall_delta | 0.1777 |
-| sent_support_rate_delta | 0.093 |
-| cot_chunk_entropy_delta | -0.0197 |
-| cot_novelty_delta | -0.1777 |
-| doubt_count_delta | -0.2137 |
+| f1_vs_gabarito_delta | 1.000000 |
+| cot_chunk_entropy_delta | 0.447735 |
+| cot_novelty_delta | 0.064353 |
+| reasoning_answer_overlap_delta | -0.001573 |
+| cot_cov_overall_delta | -0.064353 |
+| retrieval_reasoning_lexical_overlap_delta | -0.085725 |
+| sent_support_rate_delta | -0.100769 |
+| doubt_count_delta | -0.237681 |
 
-## Suporte De Sentenças Por Modelo E Sucesso
 
-| model | is_success | n | f1_mean | sent_support_rate_mean | sent_low_support_rate_mean | sent_mean_max_sim_mean |
-| --- | --- | --- | --- | --- | --- | --- |
-| original | 0 | 58 | 0.3991 | 0.1125 | 0.7797 | 0.0671 |
-| original | 1 | 42 | 0.5581 | 0.2175 | 0.5263 | 0.1216 |
-| shuffled | 0 | 51 | 0.4015 | 0.1045 | 0.7844 | 0.0628 |
-| shuffled | 1 | 49 | 0.5566 | 0.169 | 0.6211 | 0.0995 |
+## Suporte de sentencas por modelo e sucesso
+
+| indice | model | is_success | n | f1_mean | sent_support_rate_mean | sent_low_support_rate_mean | sent_mean_max_sim_mean |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 0 | original | 0 | 2 | 0.454719 | 0.000000 | 0.979167 | 0.007314 |
+| 1 | original | 1 | 48 | 0.664332 | 0.026699 | 0.889170 | 0.026476 |
+| 2 | shuffled | 0 | 6 | 0.454875 | 0.000000 | 1.000000 | 0.004510 |
+| 3 | shuffled | 1 | 44 | 0.673152 | 0.016763 | 0.940192 | 0.018278 |
