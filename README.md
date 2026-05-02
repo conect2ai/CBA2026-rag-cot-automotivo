@@ -5,7 +5,7 @@
   <img width="800" src="./figures/conect2ai_logo.jpg" alt="Conect2AI">
 </p>
 
-# Cadeias de Raciocínio em Sistemas de Geração Baseados em Recuperação: Influência da Organização do Contexto
+# Raciocínio em Sistemas RAG para Assistência Veicular: Impacto da Organização do Contexto em Ambientes de Automação Inteligente
 
 ### Autores: [Thaís Medeiros](https://github.com/thaisaraujom), [Marianne Silva](https://github.com/MarianneDiniz), [Ivanovitch Silva](https://github.com/ivanovitchm)
 
