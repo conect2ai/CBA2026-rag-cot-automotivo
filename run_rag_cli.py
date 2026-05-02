@@ -17,7 +17,7 @@ Exemplo de uso:
         --car_model Kwid \
         --year 2024 \
         --top_k 5 \
-        --max_new_tokens 250 \
+        --max_new_tokens 1200 \
         --backend mlx
 
 O JSON de entrada deve ser uma lista de objetos com pelo menos o campo
@@ -25,7 +25,7 @@ O JSON de entrada deve ser uma lista de objetos com pelo menos o campo
 original, o raciocínio e a resposta gerados, além dos chunks de contexto
 recuperados para montar o prompt.
 
-python run_rag_cli.py --backend mlx --model mlx-community/DeepSeek-R1-Distill-Qwen-7B-4bit --input perguntas_respostas_Kwid_Nov24_25.json --output rag_cli_output_mlx-community_DeepSeek-R1-Distill-Qwen-7B-4bit_Kwid_2024_25.json --brand Renault --car_model Kwid --year 2024 --max_new_tokens 250
+python run_rag_cli.py --backend mlx --model mlx-community/DeepSeek-R1-Distill-Qwen-7B-4bit --input perguntas_respostas_Kwid_Nov24_25.json --output rag_cli_output_mlx-community_DeepSeek-R1-Distill-Qwen-7B-4bit_Kwid_2024_25.json --brand Renault --car_model Kwid --year 2024 --max_new_tokens 1200
 """
 
 import argparse
@@ -103,8 +103,8 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--max_new_tokens",
         type=int,
-        default=250,
-        help="Número máximo de tokens novos por geração. O padrão é 250 para reduzir o tempo de execução local.",
+        default=1200,
+        help="Número máximo de tokens novos por geração. O padrão é 1200.",
     )
     parser.add_argument(
         "--limit",

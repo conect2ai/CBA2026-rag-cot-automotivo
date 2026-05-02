@@ -221,7 +221,7 @@ python run_rag_cli.py \
   --car_model Kwid \
   --year 2024 \
   --top_k 8 \
-  --max_new_tokens 250
+  --max_new_tokens 1200
 ```
 
 Para o modelo Llama 8B com backend MLX:
@@ -236,7 +236,7 @@ python run_rag_cli.py \
   --car_model Kwid \
   --year 2024 \
   --top_k 8 \
-  --max_new_tokens 250
+  --max_new_tokens 1200
 ```
 
 O script salva os resultados incrementalmente. Se a execução parar no meio, rode

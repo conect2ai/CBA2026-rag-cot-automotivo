@@ -472,7 +472,7 @@ def generation_answer_mlx(
     *,
     model=None,
     tokenizer=None,
-    max_new_tokens: int = 250,
+    max_new_tokens: int = 1200,
 ) -> Dict[str, object]:
     """Gera uma resposta usando MLX, mantendo o formato do backend Transformers."""
     try:
